@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1509430032">
+  <File Type="OPT-DCP" Name="D2to4_decoder_opt.dcp"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
+  <File Type="PWROPT-DCP" Name="D2to4_decoder_pwropt.dcp"/>
+  <File Type="ROUTE-DCP" Name="D2to4_decoder_routed.dcp"/>
+  <File Type="PA-TCL" Name="D2to4_decoder.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="OPT-DRC" Name="D2to4_decoder_drc_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="D2to4_decoder_drc_pwropted.rpt"/>
+  <File Type="OPT-HWDEF" Name="D2to4_decoder.hwdef"/>
+  <File Type="PLACE-DCP" Name="D2to4_decoder_placed.dcp"/>
+  <File Type="PLACE-IO" Name="D2to4_decoder_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="D2to4_decoder_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="D2to4_decoder_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="D2to4_decoder_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="D2to4_decoder_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="D2to4_decoder_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="D2to4_decoder_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="D2to4_decoder_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="D2to4_decoder_physopt.dcp"/>
+  <File Type="RDI-RDI" Name="D2to4_decoder.vdi"/>
+  <File Type="PHYSOPT-DRC" Name="D2to4_decoder_drc_physopted.rpt"/>
+  <File Type="ROUTE-DRC" Name="D2to4_decoder_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="D2to4_decoder_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="D2to4_decoder_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="D2to4_decoder_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="D2to4_decoder_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="D2to4_decoder_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="D2to4_decoder_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="D2to4_decoder_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="D2to4_decoder_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="D2to4_decoder_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="D2to4_decoder_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="D2to4_decoder_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="D2to4_decoder_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="D2to4_decoder_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="D2to4_decoder_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="D2to4_decoder.bit"/>
+  <File Type="BG-BIN" Name="D2to4_decoder.bin"/>
+  <File Type="BITSTR-MSK" Name="D2to4_decoder.msk"/>
+  <File Type="BITSTR-RBT" Name="D2to4_decoder.rbt"/>
+  <File Type="BITSTR-NKY" Name="D2to4_decoder.nky"/>
+  <File Type="BITSTR-BMM" Name="D2to4_decoder_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="D2to4_decoder.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="D2to4_decoder.sysdef"/>
+  <File Type="BG-BGN" Name="D2to4_decoder.bgn"/>
+  <File Type="BG-DRC" Name="D2to4_decoder.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/D2to4_decoder.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="D2to4_decoder"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../Basys3.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  "../../../structural_multiplexer.srcs/sources_1/new/mux4to1.sv"
+sv xil_defaultlib  "../../../structural_multiplexer.srcs/sim_1/new/test_mux.sv"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

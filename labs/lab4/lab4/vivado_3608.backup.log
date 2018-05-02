@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Mon Nov 13 17:55:08 2017
+# Process ID: 2304
+# Log file: F:/lab4/vivado.log
+# Journal file: F:/lab4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/lab4/lab4.xpr
+INFO: [Project 1-313] Project file moved from 'D:/Users/TEMP.PCLABS.003/lab4' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/Desktop/Basys3.xdc', nor could it be found using path 'D:/Users/TEMP.PCLABS.003/Desktop/Basys3.xdc'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 13 17:59:06 2017...

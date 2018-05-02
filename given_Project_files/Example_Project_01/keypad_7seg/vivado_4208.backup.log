@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Mon Nov 13 10:16:44 2017
+# Process ID: 4208
+# Current directory: C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/keyboard_matrix_netlist_modules
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4976 C:\Users\hamze\Dropbox\Academic\Courses\Bilkent_TA_Digital_Design_CS223\Tutorial_Projects_Vivado_Basys3\keyboard_matrix_netlist_modules\keyboard_matrix.xpr
+# Log file: C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/keyboard_matrix_netlist_modules/vivado.log
+# Journal file: C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/keyboard_matrix_netlist_modules\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/keyboard_matrix_netlist_modules/keyboard_matrix.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/keyboard_matrix_netlist_modules'
+INFO: [Project 1-313] Project file moved from 'C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/keyboard_matrix' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.3/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 751.191 ; gain = 30.602
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Mon Nov 13 10:23:43 2017] Launched synth_1...
+Run output will be captured here: C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/keyboard_matrix_netlist_modules/keyboard_matrix.runs/synth_1/runme.log
+[Mon Nov 13 10:23:43 2017] Launched impl_1...
+Run output will be captured here: C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/keyboard_matrix_netlist_modules/keyboard_matrix.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Mon Nov 13 10:32:09 2017] Launched synth_1...
+Run output will be captured here: C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/keyboard_matrix_netlist_modules/keyboard_matrix.runs/synth_1/runme.log
+[Mon Nov 13 10:32:09 2017] Launched impl_1...
+Run output will be captured here: C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/keyboard_matrix_netlist_modules/keyboard_matrix.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 13 10:40:32 2017...

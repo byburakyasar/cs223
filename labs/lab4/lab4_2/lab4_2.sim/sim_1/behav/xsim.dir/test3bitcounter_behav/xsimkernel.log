@@ -1,0 +1,7 @@
+Running: xsim.dir/test3bitcounter_behav/xsimk.exe -simmode gui -wdb test3bitcounter_behav.wdb -simrunnum 0 -socket 49724
+Design successfully loaded
+Design Loading Memory Usage: 20128 KB (Peak: 20128 KB)
+Design Loading CPU Usage: 62 ms
+Simulation completed
+Simulation Memory Usage: 20548 KB (Peak: 20548 KB)
+Simulation CPU Usage: 92 ms

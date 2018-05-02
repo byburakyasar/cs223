@@ -1,0 +1,156 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Mon Nov 13 19:26:49 2017
+# Process ID: 3752
+# Log file: D:/Users/TEMP.PCLABS.001/Desktop/lab4/vivado.log
+# Journal file: D:/Users/TEMP.PCLABS.001/Desktop/lab4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Users/TEMP.PCLABS.001/Desktop/lab4/lab4.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Test2BitCounter' in fileset 'sim_1'...
+INFO: [USF-XSim-66] Exported 'D:/Users/TEMP.PCLABS.001/Desktop/lab4/lab4.srcs/sim_1/new/Test2BitCounter.sv'
+INFO: [USF-XSim-66] Exported 'D:/Users/TEMP.PCLABS.001/Desktop/lab4/lab4.srcs/sim_1/new/Test2BitCounterClk.sv'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'D:/Users/TEMP.PCLABS.001/Desktop/lab4/lab4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Test2BitCounter_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Users/TEMP.PCLABS.001/Desktop/lab4/lab4.srcs/sources_1/new/DFlipFlop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DFlipFlop
+INFO: [VRFC 10-311] analyzing module TwoBitUpCounter
+ERROR: [VRFC 10-1280] procedural assignment to a non-register D is not permitted, left-hand side should be reg/integer/time/genvar [D:/Users/TEMP.PCLABS.001/Desktop/lab4/lab4.srcs/sources_1/new/DFlipFlop.sv:38]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register D is not permitted, left-hand side should be reg/integer/time/genvar [D:/Users/TEMP.PCLABS.001/Desktop/lab4/lab4.srcs/sources_1/new/DFlipFlop.sv:38]
+ERROR: [VRFC 10-1040] module TwoBitUpCounter ignored due to previous errors [D:/Users/TEMP.PCLABS.001/Desktop/lab4/lab4.srcs/sources_1/new/DFlipFlop.sv:32]
+INFO: [VRFC 10-311] analyzing module ClockDivider
+ERROR: [VRFC 10-1040] module ClockDivider ignored due to previous errors [D:/Users/TEMP.PCLABS.001/Desktop/lab4/lab4.srcs/sources_1/new/DFlipFlop.sv:47]
+INFO: [VRFC 10-311] analyzing module TwoBitUpCounter_Clk
+ERROR: [VRFC 10-1280] procedural assignment to a non-register D is not permitted, left-hand side should be reg/integer/time/genvar [D:/Users/TEMP.PCLABS.001/Desktop/lab4/lab4.srcs/sources_1/new/DFlipFlop.sv:70]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register D is not permitted, left-hand side should be reg/integer/time/genvar [D:/Users/TEMP.PCLABS.001/Desktop/lab4/lab4.srcs/sources_1/new/DFlipFlop.sv:70]
+ERROR: [VRFC 10-1040] module TwoBitUpCounter_Clk ignored due to previous errors [D:/Users/TEMP.PCLABS.001/Desktop/lab4/lab4.srcs/sources_1/new/DFlipFlop.sv:62]
+ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'D:/Users/TEMP.PCLABS.001/Desktop/lab4/lab4.sim/sim_1/behav/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Test2BitCounter' in fileset 'sim_1'...
+INFO: [USF-XSim-66] Exported 'D:/Users/TEMP.PCLABS.001/Desktop/lab4/lab4.srcs/sim_1/new/Test2BitCounter.sv'
+INFO: [USF-XSim-66] Exported 'D:/Users/TEMP.PCLABS.001/Desktop/lab4/lab4.srcs/sim_1/new/Test2BitCounterClk.sv'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'D:/Users/TEMP.PCLABS.001/Desktop/lab4/lab4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Test2BitCounter_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Users/TEMP.PCLABS.001/Desktop/lab4/lab4.srcs/sources_1/new/DFlipFlop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DFlipFlop
+INFO: [VRFC 10-311] analyzing module TwoBitUpCounter
+INFO: [VRFC 10-311] analyzing module TwoBitUpCounter_Clk
+INFO: [VRFC 10-311] analyzing module ClockDivider
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Users/TEMP.PCLABS.001/Desktop/lab4/lab4.srcs/sim_1/new/Test2BitCounter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Test2BitCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Users/TEMP.PCLABS.001/Desktop/lab4/lab4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Users/TEMP.PCLABS.001/Desktop/lab4/lab4.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 93a3c569c3cc45608c59a619eca2faa5 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Test2BitCounter_behav xil_defaultlib.Test2BitCounter xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.DFlipFlop
+Compiling module xil_defaultlib.TwoBitUpCounter
+Compiling module xil_defaultlib.Test2BitCounter
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot Test2BitCounter_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source D:/Users/TEMP.PCLABS.001/Desktop/lab4/lab4.sim/sim_1/behav/xsim.dir/Test2BitCounter_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'D:/Users/TEMP.PCLABS.001/Desktop/lab4/lab4.sim/sim_1/behav/xsim.dir/Test2BitCounter_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Nov 13 19:48:58 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon Nov 13 19:48:58 2017...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Users/TEMP.PCLABS.001/Desktop/lab4/lab4.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Test2BitCounter_behav -key {Behavioral:sim_1:Functional:Test2BitCounter} -tclbatch {Test2BitCounter.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source Test2BitCounter.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Test2BitCounter_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 788.203 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream
+[Mon Nov 13 19:52:37 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS.001/Desktop/lab4/lab4.runs/synth_1/runme.log
+[Mon Nov 13 19:52:37 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS.001/Desktop/lab4/lab4.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.2
+  **** Build date : Jun 26 2015-16:56:39
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0]
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183713146A
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS.001/Desktop/lab4/lab4.runs/impl_1/TwoBitUpCounter.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS.001/Desktop/lab4/lab4.runs/impl_1/TwoBitUpCounter.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-3175] Target jsn-Basys3-210183713146A is no longer available.
+Please use disconnect_hw_server to close the current server connection. Check cable connectivity and that the target board is powered up.
+Restart the hw_server application running on host localhost, port 3121 and then use connect_hw_server to re-establish connection to target.
+close_hw_target
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost/xilinx_tcf/Digilent/210183713146A
+ERROR: [Labtools 27-3175] Target jsn-Basys3-210183713146A is no longer available.
+Please use disconnect_hw_server to close the current server connection. Check cable connectivity and that the target board is powered up.
+Restart the hw_server application running on host localhost, port 3121 and then use connect_hw_server to re-establish connection to target.
+close_hw_target
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost/xilinx_tcf/Digilent/210183713146A
+INFO: [Labtoolstcl 44-468] Target hw_target localhost/xilinx_tcf/Digilent/210183713146A is already closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 13 20:00:10 2017...

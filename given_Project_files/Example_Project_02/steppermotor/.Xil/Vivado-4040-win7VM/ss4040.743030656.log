@@ -1,0 +1,24 @@
+srcscan starts
+INFO: analyzing module stepmotor (VERI-9002)
+INFO: analyzing module stepmotor_wrapper (VERI-9002)
+C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/stepmotor_wrapper.sv(66): WARNING: syntax error near 'd (VERI-1137)
+C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/stepmotor_wrapper.sv(67): WARNING: syntax error near 'd (VERI-1137)
+C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/stepmotor_wrapper.sv(89): WARNING: syntax error near end (VERI-1137)
+C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/stepmotor_wrapper.sv(99): WARNING: syntax error near end (VERI-1137)
+C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/stepmotor_wrapper.sv(74): WARNING: identifier stop_motor is used before its declaration (VERI-1875)
+C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/stepmotor_wrapper.sv(82): WARNING: identifier stop_motor is used before its declaration (VERI-1875)
+C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/stepmotor_wrapper.sv(83): WARNING: identifier direction_motor is used before its declaration (VERI-1875)
+C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/stepmotor_wrapper.sv(92): WARNING: identifier stop_motor is used before its declaration (VERI-1875)
+C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/stepmotor_wrapper.sv(93): WARNING: identifier direction_motor is used before its declaration (VERI-1875)
+C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/stepmotor_wrapper.sv(99): ERROR: default case should appear only once (VERI-1020)
+INFO: analyzing module testbench (VERI-9002)
+INFO: analyzing module top (VERI-9002)
+Listing tops:
+VeriTop library:xil_defaultlib mod:stepmotor
+VeriTop library:xil_defaultlib mod:testbench
+VeriTop library:xil_defaultlib mod:top
+END of tops
+C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/stepmotor.sv(22): INFO: compiling module stepmotor_default (VERI-1018)
+C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sim_1/new/testbench.sv(21): INFO: compiling module testbench_default (VERI-1018)
+C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/top.sv(22): INFO: compiling module top_default (VERI-1018)
+srcscan exits with return value 0

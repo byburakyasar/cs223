@@ -1,0 +1,125 @@
+//////////////////////////////////////////////////////////////
+module D2to4_decoder( output logic y3,y2,y1,y0,
+                      input logic in1,in0,en);
+   assign y3 = en & in1 & in0;
+   assign y2 = en & in1 & ~in0;
+   assign y1 = en & ~in1 & in0;
+   assign y0 = en & ~in1 & ~in0;
+endmodule
+
+//////////////////////////////////////////////////////////////
+module testD2to4_decoder();
+   logic in1,in0,en;
+   logic y3,y2,y1,y0;
+   //instantiate device under test
+   D2to4_decoder dut(y3,y2,y1,y0,in1,in0,en);
+   //apply inputs one at a time
+   initial begin
+     in1 = 0; in0 = 0; en = 0; #10;
+     en = 1; #10;
+     in0 = 1; en = 0; #10;
+     en = 1; #10;
+     in1 = 1; in0 = 0; en = 0; #10;
+     en = 1; #10;
+     in0 = 1; en = 0; #10;
+     en = 1; #10;
+   end
+endmodule
+
+
+////////////////////////////////////////////////////////////////
+module D3to8_decoder(output logic y7,y6,y5,y4,y3,y2,y1,y0,
+                     input logic in2, in1 ,in0);
+   D2to4_decoder d2to4_1 (y3,y2,y1,y0,in2,in1,~in0);                 
+   D2to4_decoder d2to4_2 (y7,y6,y5,y4,in2,in1,in0);
+endmodule
+
+/////////////////////////////////////////////////////////////////////
+module testD3to8_decoder();
+   logic in2,in1,in0;
+   logic y7,y6,y5,y4,y3,y2,y1,y0;
+   //instantiate device under test
+   D3to8_decoder dut(y7,y6,y5,y4,y3,y2,y1,y0,in2,in1,in0);
+   //apply inputs one at a time
+   initial begin
+     in0 = 0; in2 = 0; in1 = 0; #10;
+     in1 = 1; #10;
+     in2 = 1; in1 = 0; #10;
+     in1 = 1; #10;
+     in0 = 1; in2 = 0; in1 = 0; #10;
+     in1 = 1; #10;
+     in2 = 1; in1 = 0; #10;
+     in1 = 1; #10;
+   end
+endmodule
+
+////////////////////////////////////////////////////////////////////
+module implement_func(output logic led,
+                      input logic w,x,y);
+   logic y7,y6,y5,y4,y3,y2,y1,y0;
+   D3to8_decoder decoder(y7,y6,y5,y4,y3,y2,y1,y0,w,x,y);
+   
+   logic n1,n2; //internal nodes
+   
+   or or1 (n1,y0,y1);
+   or or2 (n2,y5,y6);
+   or or3 (led,n1,n2);
+endmodule
+
+///////////////////////////////////////////////////////////////
+module test_decoderfunc();
+    logic w,x,y;
+    logic led;
+    //instantiate device under test
+    implement_func dut(led,w,x,y);
+    //apply inputs one at a time
+    initial begin
+      y = 0; w = 0; x = 0; #10;
+      x = 1; #10;
+      w = 1; x = 0; #10;
+      x = 1; #10;
+      y = 1; w = 0; x = 0; #10;
+      x = 1; #10;
+      w = 1; x = 0; #10;
+      x = 1; #10;
+    end
+endmodule
+
+///////////////////////////////////////////////////////////////////////////////
+module mux4to1(output logic y,
+               input logic in3,in2,in1,in0,s1,s0,en);
+   assign y = en & (s1 ? (s0 ? in3 : in2) : (s0 ? in1 : in0));
+endmodule
+///////////////////////////////////////////////////////////////////////////////
+module mux8to1(output logic y,
+               input logic in7,in6,in5,in4,in3,in2,in1,in0,s2,s1,s0);
+   logic y1,y2;
+   
+   mux4to1 mux1(y1,in3,in2,in1,in0,s1,s0,~s2);
+   mux4to1 mux2(y2,in7,in6,in5,in4,s1,s0,s2);
+   or or1(y,y1,y2);
+endmodule
+////////////////////////////////////////////////////////////////////////////////
+module test_mux();
+logic y;
+logic in7,in6,in5,in4,in3,in2,in1,in0,s2,s1,s0;
+   // instantiate device under test
+   mux8to1 dut(y,in7,in6,in5,in4,in3,in2,in1,in0,s2,s1,s0);
+   initial begin
+   in7 = 1; in6 = 0; in5 = 1; in4 = 0; in3 = 1; in2 = 0; in1 = 1; in0 = 0;
+        s2 = 0; s1 = 0; s0 = 0; #10;
+        s0 = 1; #10;
+        s1 = 1; s0 = 0; #10;
+        s0 = 1; #10;
+        s2 = 1; s1 = 0; s0 = 0; #10;
+        s0 = 1; #10;
+        s1 = 1; s0 = 0; #10;
+        s0 = 1; #10;
+   end
+endmodule
+//////////////////////////////////////////////////////
+
+module partd(output logic led,
+             input logic w,x,y,z);
+   mux8to1 muxobject(led,z,~z,~z,1,z,z,~z,z,w,x,y);
+endmodule

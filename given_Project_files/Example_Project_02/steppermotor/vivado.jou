@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Fri Nov 17 14:53:04 2017
+# Process ID: 4248
+# Current directory: C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Final_project/Example_Project_02/steppermotor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6892 C:\Users\hamze\Dropbox\Academic\Courses\Bilkent_TA_Digital_Design_CS223\2017 Fall\Labs\Final_project\Example_Project_02\steppermotor\stepmotor.xpr
+# Log file: C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Final_project/Example_Project_02/steppermotor/vivado.log
+# Journal file: C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Final_project/Example_Project_02/steppermotor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Final_project/Example_Project_02/steppermotor/stepmotor.xpr}
+update_compile_order -fileset sources_1
+reset_project
+reset_simulation

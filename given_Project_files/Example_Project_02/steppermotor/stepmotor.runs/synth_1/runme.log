@@ -1,0 +1,1036 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a35tcpg236-1 -flatten_hierarchy none
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4108 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 344.438 ; gain = 94.418
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/top.sv:23]
+INFO: [Synth 8-638] synthesizing module 'steppermotor_wrapper' [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/steppermotor_wrapper.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/steppermotor_wrapper.sv:71]
+INFO: [Synth 8-638] synthesizing module 'stepmotor' [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/stepmotor.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/stepmotor.sv:57]
+INFO: [Synth 8-256] done synthesizing module 'stepmotor' (1#1) [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/stepmotor.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'steppermotor_wrapper' (2#1) [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/steppermotor_wrapper.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'top' (3#1) [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/top.sv:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 385.328 ; gain = 135.309
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 385.328 ; gain = 135.309
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/constrs_1/new/top.xdc]
+Finished Parsing XDC File [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/constrs_1/new/top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/constrs_1/new/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 695.219 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 695.219 ; gain = 445.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 695.219 ; gain = 445.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 695.219 ; gain = 445.199
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'st_reg' in module 'stepmotor'
+INFO: [Synth 8-5546] ROM "clk_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "phases_tmp" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "st_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "st_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "st_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "st_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/stepmotor.sv:47]
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (29) is larger than maximum supported(25)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    st_0 |                               00 | 00000000000000000000000000000000
+                    st_3 |                               01 | 00000000000000000000000000000011
+                    st_2 |                               10 | 00000000000000000000000000000010
+                    st_1 |                               11 | 00000000000000000000000000000001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'st_reg' using encoding 'sequential' in module 'stepmotor'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 695.219 ; gain = 445.199
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     29 Bit       Adders := 1     
++---Registers : 
+	               29 Bit    Registers := 1     
+	               20 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     29 Bit        Muxes := 3     
+	   4 Input     29 Bit        Muxes := 1     
+	   2 Input     27 Bit        Muxes := 2     
+	   4 Input     20 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module stepmotor 
+Detailed RTL Component Info : 
++---Registers : 
+	               20 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     20 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module steppermotor_wrapper 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     29 Bit       Adders := 1     
++---Registers : 
+	               29 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     29 Bit        Muxes := 3     
+	   4 Input     29 Bit        Muxes := 1     
+	   2 Input     27 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "clk_en" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/stepmotor.sv:47]
+INFO: [Synth 8-3886] merging instance 'steppermotor_wrapper_inst0/stepmotor_inst0/D_reg[0]' (FD) to 'steppermotor_wrapper_inst0/stepmotor_inst0/D_reg[1]'
+INFO: [Synth 8-3886] merging instance 'steppermotor_wrapper_inst0/stepmotor_inst0/D_reg[1]' (FD) to 'steppermotor_wrapper_inst0/stepmotor_inst0/D_reg[2]'
+INFO: [Synth 8-3886] merging instance 'steppermotor_wrapper_inst0/stepmotor_inst0/D_reg[2]' (FD) to 'steppermotor_wrapper_inst0/stepmotor_inst0/D_reg[3]'
+INFO: [Synth 8-3886] merging instance 'steppermotor_wrapper_inst0/stepmotor_inst0/D_reg[3]' (FD) to 'steppermotor_wrapper_inst0/stepmotor_inst0/D_reg[4]'
+INFO: [Synth 8-3886] merging instance 'steppermotor_wrapper_inst0/stepmotor_inst0/D_reg[4]' (FD) to 'steppermotor_wrapper_inst0/stepmotor_inst0/D_reg[5]'
+INFO: [Synth 8-3886] merging instance 'steppermotor_wrapper_inst0/stepmotor_inst0/D_reg[5]' (FD) to 'steppermotor_wrapper_inst0/stepmotor_inst0/D_reg[6]'
+INFO: [Synth 8-3886] merging instance 'steppermotor_wrapper_inst0/stepmotor_inst0/D_reg[6]' (FD) to 'steppermotor_wrapper_inst0/stepmotor_inst0/D_reg[7]'
+INFO: [Synth 8-3886] merging instance 'steppermotor_wrapper_inst0/stepmotor_inst0/D_reg[7]' (FD) to 'steppermotor_wrapper_inst0/stepmotor_inst0/D_reg[8]'
+INFO: [Synth 8-3886] merging instance 'steppermotor_wrapper_inst0/stepmotor_inst0/D_reg[8]' (FD) to 'steppermotor_wrapper_inst0/stepmotor_inst0/D_reg[9]'
+INFO: [Synth 8-3886] merging instance 'steppermotor_wrapper_inst0/stepmotor_inst0/D_reg[9]' (FD) to 'steppermotor_wrapper_inst0/stepmotor_inst0/D_reg[10]'
+INFO: [Synth 8-3886] merging instance 'steppermotor_wrapper_inst0/stepmotor_inst0/D_reg[10]' (FD) to 'steppermotor_wrapper_inst0/stepmotor_inst0/D_reg[11]'
+INFO: [Synth 8-3886] merging instance 'steppermotor_wrapper_inst0/stepmotor_inst0/D_reg[11]' (FD) to 'steppermotor_wrapper_inst0/stepmotor_inst0/D_reg[12]'
+INFO: [Synth 8-3886] merging instance 'steppermotor_wrapper_inst0/stepmotor_inst0/D_reg[12]' (FD) to 'steppermotor_wrapper_inst0/stepmotor_inst0/D_reg[13]'
+INFO: [Synth 8-3886] merging instance 'steppermotor_wrapper_inst0/stepmotor_inst0/D_reg[13]' (FD) to 'steppermotor_wrapper_inst0/stepmotor_inst0/D_reg[14]'
+INFO: [Synth 8-3886] merging instance 'steppermotor_wrapper_inst0/stepmotor_inst0/D_reg[14]' (FD) to 'steppermotor_wrapper_inst0/stepmotor_inst0/D_reg[15]'
+INFO: [Synth 8-3886] merging instance 'steppermotor_wrapper_inst0/stepmotor_inst0/D_reg[15]' (FD) to 'steppermotor_wrapper_inst0/stepmotor_inst0/D_reg[16]'
+INFO: [Synth 8-3886] merging instance 'steppermotor_wrapper_inst0/stepmotor_inst0/D_reg[16]' (FD) to 'steppermotor_wrapper_inst0/stepmotor_inst0/D_reg[17]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 695.219 ; gain = 445.199
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:00 ; elapsed = 00:01:01 . Memory (MB): peak = 695.219 ; gain = 445.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 695.219 ; gain = 445.199
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:01 ; elapsed = 00:01:02 . Memory (MB): peak = 695.219 ; gain = 445.199
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:02 ; elapsed = 00:01:04 . Memory (MB): peak = 695.219 ; gain = 445.199
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:02 ; elapsed = 00:01:04 . Memory (MB): peak = 695.219 ; gain = 445.199
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:03 ; elapsed = 00:01:04 . Memory (MB): peak = 695.219 ; gain = 445.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    20|
+|3     |LUT1   |     5|
+|4     |LUT2   |    11|
+|5     |LUT3   |    11|
+|6     |LUT4   |    20|
+|7     |LUT5   |     5|
+|8     |LUT6   |     7|
+|9     |FDRE   |    65|
+|10    |IBUF   |     6|
+|11    |OBUF   |     4|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------------------+---------------------+------+
+|      |Instance                     |Module               |Cells |
++------+-----------------------------+---------------------+------+
+|1     |top                          |                     |   155|
+|2     |  steppermotor_wrapper_inst0 |steppermotor_wrapper |   144|
+|3     |    stepmotor_inst0          |stepmotor            |    54|
++------+-----------------------------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:03 ; elapsed = 00:01:04 . Memory (MB): peak = 695.219 ; gain = 445.199
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:39 ; elapsed = 00:00:53 . Memory (MB): peak = 695.219 ; gain = 135.309
+Synthesis Optimization Complete : Time (s): cpu = 00:01:03 ; elapsed = 00:01:04 . Memory (MB): peak = 695.219 ; gain = 445.199
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 26 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+47 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:04 ; elapsed = 00:01:06 . Memory (MB): peak = 695.219 ; gain = 456.723
+INFO: [Common 17-1381] The checkpoint 'C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 695.219 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 16 21:42:31 2017...
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a35tcpg236-1 -flatten_hierarchy none
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3644 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 343.953 ; gain = 93.918
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/top.sv:23]
+INFO: [Synth 8-638] synthesizing module 'steppermotor_wrapper' [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/steppermotor_wrapper.sv:23]
+INFO: [Synth 8-638] synthesizing module 'GND' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:4942]
+INFO: [Synth 8-256] done synthesizing module 'GND' (1#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:4942]
+INFO: [Synth 8-638] synthesizing module 'VCC' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:52070]
+INFO: [Synth 8-256] done synthesizing module 'VCC' (2#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:52070]
+INFO: [Synth 8-638] synthesizing module 'LUT1' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25456]
+	Parameter INIT bound to: 2'b01 
+INFO: [Synth 8-256] done synthesizing module 'LUT1' (3#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25456]
+INFO: [Synth 8-638] synthesizing module 'LUT6' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25666]
+	Parameter INIT bound to: 64'b1100110011110011000000001111001111011101111100110001000111110011 
+INFO: [Synth 8-256] done synthesizing module 'LUT6' (4#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25666]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized0' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25666]
+	Parameter INIT bound to: 64'b1111111111111111111111111111111111111111111111111111111111111110 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized0' (4#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25666]
+INFO: [Synth 8-638] synthesizing module 'LUT2' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25490]
+	Parameter INIT bound to: 4'b0001 
+INFO: [Synth 8-256] done synthesizing module 'LUT2' (5#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25490]
+INFO: [Synth 8-638] synthesizing module 'LUT4' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25570]
+	Parameter INIT bound to: 16'b1000000000001000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4' (6#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25570]
+INFO: [Synth 8-638] synthesizing module 'LUT2__parameterized0' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25490]
+	Parameter INIT bound to: 4'b1011 
+INFO: [Synth 8-256] done synthesizing module 'LUT2__parameterized0' (6#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25490]
+INFO: [Synth 8-638] synthesizing module 'LUT2__parameterized1' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25490]
+	Parameter INIT bound to: 4'b1110 
+INFO: [Synth 8-256] done synthesizing module 'LUT2__parameterized1' (6#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25490]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized0' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25570]
+	Parameter INIT bound to: 16'b1111111111111101 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized0' (6#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25570]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized1' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25570]
+	Parameter INIT bound to: 16'b0001000000000100 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized1' (6#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25570]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized2' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25570]
+	Parameter INIT bound to: 16'b0000000000100100 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized2' (6#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25570]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized3' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25570]
+	Parameter INIT bound to: 16'b0000100010000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized3' (6#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25570]
+INFO: [Synth 8-638] synthesizing module 'LUT3' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25528]
+	Parameter INIT bound to: 8'b00000001 
+INFO: [Synth 8-256] done synthesizing module 'LUT3' (7#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25528]
+INFO: [Synth 8-638] synthesizing module 'LUT5' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25616]
+	Parameter INIT bound to: 32'b11111111111111111111111111111110 
+INFO: [Synth 8-256] done synthesizing module 'LUT5' (8#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25616]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized4' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25570]
+	Parameter INIT bound to: 16'b1000000001000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized4' (8#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25570]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized5' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25570]
+	Parameter INIT bound to: 16'b0000000000010100 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized5' (8#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25570]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized0' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25616]
+	Parameter INIT bound to: 32'b11111111111111111011111111111111 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized0' (8#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25616]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized0' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25528]
+	Parameter INIT bound to: 8'b11110111 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized0' (8#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25528]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized1' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25528]
+	Parameter INIT bound to: 8'b11111101 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized1' (8#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25528]
+INFO: [Synth 8-638] synthesizing module 'FDRE' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE' (9#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'CARRY4' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:961]
+INFO: [Synth 8-256] done synthesizing module 'CARRY4' (10#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:961]
+WARNING: [Synth 8-350] instance 'count_reg[28]_i_11' of module 'CARRY4' requires 6 connections, but only 5 given [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/steppermotor_wrapper.sv:581]
+WARNING: [Synth 8-350] instance 'count_reg[28]_i_14' of module 'CARRY4' requires 6 connections, but only 5 given [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/steppermotor_wrapper.sv:587]
+WARNING: [Synth 8-689] width (3) of port connection 'CO' does not match port width (4) of module 'CARRY4' [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/steppermotor_wrapper.sv:595]
+WARNING: [Synth 8-350] instance 'count_reg[28]_i_20' of module 'CARRY4' requires 6 connections, but only 5 given [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/steppermotor_wrapper.sv:600]
+WARNING: [Synth 8-350] instance 'count_reg[28]_i_25' of module 'CARRY4' requires 6 connections, but only 5 given [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/steppermotor_wrapper.sv:606]
+WARNING: [Synth 8-689] width (2) of port connection 'CO' does not match port width (4) of module 'CARRY4' [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/steppermotor_wrapper.sv:614]
+WARNING: [Synth 8-350] instance 'count_reg[28]_i_4' of module 'CARRY4' requires 6 connections, but only 5 given [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/steppermotor_wrapper.sv:612]
+WARNING: [Synth 8-689] width (2) of port connection 'CO' does not match port width (4) of module 'CARRY4' [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/steppermotor_wrapper.sv:620]
+WARNING: [Synth 8-350] instance 'count_reg[28]_i_5' of module 'CARRY4' requires 6 connections, but only 5 given [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/steppermotor_wrapper.sv:618]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized1' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25616]
+	Parameter INIT bound to: 32'b10111000111111111011100000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized1' (10#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25616]
+INFO: [Synth 8-638] synthesizing module 'LUT2__parameterized2' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25490]
+	Parameter INIT bound to: 4'b0010 
+INFO: [Synth 8-256] done synthesizing module 'LUT2__parameterized2' (10#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25490]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized1' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25666]
+	Parameter INIT bound to: 64'b0000000000000000111111111111111100010001111100000001000111110000 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized1' (10#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25666]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized2' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25528]
+	Parameter INIT bound to: 8'b01101100 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized2' (10#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25528]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized3' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25528]
+	Parameter INIT bound to: 8'b10111000 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized3' (10#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25528]
+INFO: [Synth 8-638] synthesizing module 'stepmotor' [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/stepmotor.sv:23]
+INFO: [Synth 8-638] synthesizing module 'LUT2__parameterized3' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25490]
+	Parameter INIT bound to: 4'b0110 
+INFO: [Synth 8-256] done synthesizing module 'LUT2__parameterized3' (10#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25490]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized4' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25528]
+	Parameter INIT bound to: 8'b01110100 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized4' (10#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25528]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized2' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25616]
+	Parameter INIT bound to: 32'b10010110111111111001011000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized2' (10#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25616]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized3' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25616]
+	Parameter INIT bound to: 32'b00000000000000001000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized3' (10#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25616]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized2' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25666]
+	Parameter INIT bound to: 64'b0000000000000000000000000000000000000000000000000000000000000001 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized2' (10#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25666]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized6' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25570]
+	Parameter INIT bound to: 16'b1000000000000001 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized6' (10#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25570]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized7' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25570]
+	Parameter INIT bound to: 16'b1001000000001001 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized7' (10#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25570]
+WARNING: [Synth 8-689] width (3) of port connection 'CO' does not match port width (4) of module 'CARRY4' [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/stepmotor.sv:308]
+WARNING: [Synth 8-350] instance 'count_reg[0]_i_1' of module 'CARRY4' requires 6 connections, but only 5 given [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/stepmotor.sv:306]
+WARNING: [Synth 8-350] instance 'count_reg[0]_i_4' of module 'CARRY4' requires 6 connections, but only 5 given [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/stepmotor.sv:319]
+WARNING: [Synth 8-689] width (3) of port connection 'CO' does not match port width (4) of module 'CARRY4' [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/stepmotor.sv:390]
+INFO: [Synth 8-638] synthesizing module 'LUT2__parameterized4' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25490]
+	Parameter INIT bound to: 4'b1001 
+INFO: [Synth 8-256] done synthesizing module 'LUT2__parameterized4' (10#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25490]
+INFO: [Synth 8-256] done synthesizing module 'stepmotor' (11#1) [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/stepmotor.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'steppermotor_wrapper' (12#1) [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/steppermotor_wrapper.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'top' (13#1) [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/top.sv:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 385.844 ; gain = 135.809
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 385.844 ; gain = 135.809
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/constrs_1/new/top.xdc]
+Finished Parsing XDC File [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/constrs_1/new/top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/constrs_1/new/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 685.961 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 685.961 ; gain = 435.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 685.961 ; gain = 435.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 685.961 ; gain = 435.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 685.961 ; gain = 435.926
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 685.961 ; gain = 435.926
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 685.961 ; gain = 435.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 685.961 ; gain = 435.926
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 685.961 ; gain = 435.926
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 685.961 ; gain = 435.926
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 685.961 ; gain = 435.926
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 685.961 ; gain = 435.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    20|
+|3     |LUT1   |     5|
+|4     |LUT2   |    11|
+|5     |LUT3   |    11|
+|6     |LUT4   |    20|
+|7     |LUT5   |     5|
+|8     |LUT6   |     7|
+|9     |FDRE   |    65|
+|10    |IBUF   |     6|
+|11    |OBUF   |     4|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------------------+---------------------+------+
+|      |Instance                     |Module               |Cells |
++------+-----------------------------+---------------------+------+
+|1     |top                          |                     |   155|
+|2     |  steppermotor_wrapper_inst0 |steppermotor_wrapper |   144|
+|3     |    stepmotor_inst0          |stepmotor            |    54|
++------+-----------------------------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 685.961 ; gain = 435.926
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:50 . Memory (MB): peak = 685.961 ; gain = 135.809
+Synthesis Optimization Complete : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 685.961 ; gain = 435.926
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 26 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+90 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:01:03 . Memory (MB): peak = 685.961 ; gain = 447.449
+INFO: [Common 17-1381] The checkpoint 'C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 685.961 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 17 10:19:57 2017...
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a35tcpg236-1 -flatten_hierarchy none
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6588 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 344.520 ; gain = 93.664
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/top.sv:23]
+INFO: [Synth 8-638] synthesizing module 'steppermotor_wrapper' [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/steppermotor_wrapper.sv:23]
+INFO: [Synth 8-638] synthesizing module 'GND' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:4942]
+INFO: [Synth 8-256] done synthesizing module 'GND' (1#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:4942]
+INFO: [Synth 8-638] synthesizing module 'VCC' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:52070]
+INFO: [Synth 8-256] done synthesizing module 'VCC' (2#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:52070]
+INFO: [Synth 8-638] synthesizing module 'LUT1' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25456]
+	Parameter INIT bound to: 2'b01 
+INFO: [Synth 8-256] done synthesizing module 'LUT1' (3#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25456]
+INFO: [Synth 8-638] synthesizing module 'LUT6' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25666]
+	Parameter INIT bound to: 64'b1100110011110011000000001111001111011101111100110001000111110011 
+INFO: [Synth 8-256] done synthesizing module 'LUT6' (4#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25666]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized0' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25666]
+	Parameter INIT bound to: 64'b1111111111111111111111111111111111111111111111111111111111111110 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized0' (4#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25666]
+INFO: [Synth 8-638] synthesizing module 'LUT2' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25490]
+	Parameter INIT bound to: 4'b0001 
+INFO: [Synth 8-256] done synthesizing module 'LUT2' (5#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25490]
+INFO: [Synth 8-638] synthesizing module 'LUT4' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25570]
+	Parameter INIT bound to: 16'b1000000000001000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4' (6#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25570]
+INFO: [Synth 8-638] synthesizing module 'LUT2__parameterized0' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25490]
+	Parameter INIT bound to: 4'b1011 
+INFO: [Synth 8-256] done synthesizing module 'LUT2__parameterized0' (6#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25490]
+INFO: [Synth 8-638] synthesizing module 'LUT2__parameterized1' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25490]
+	Parameter INIT bound to: 4'b1110 
+INFO: [Synth 8-256] done synthesizing module 'LUT2__parameterized1' (6#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25490]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized0' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25570]
+	Parameter INIT bound to: 16'b1111111111111101 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized0' (6#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25570]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized1' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25570]
+	Parameter INIT bound to: 16'b0001000000000100 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized1' (6#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25570]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized2' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25570]
+	Parameter INIT bound to: 16'b0000000000100100 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized2' (6#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25570]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized3' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25570]
+	Parameter INIT bound to: 16'b0000100010000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized3' (6#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25570]
+INFO: [Synth 8-638] synthesizing module 'LUT3' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25528]
+	Parameter INIT bound to: 8'b00000001 
+INFO: [Synth 8-256] done synthesizing module 'LUT3' (7#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25528]
+INFO: [Synth 8-638] synthesizing module 'LUT5' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25616]
+	Parameter INIT bound to: 32'b11111111111111111111111111111110 
+INFO: [Synth 8-256] done synthesizing module 'LUT5' (8#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25616]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized4' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25570]
+	Parameter INIT bound to: 16'b1000000001000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized4' (8#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25570]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized5' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25570]
+	Parameter INIT bound to: 16'b0000000000010100 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized5' (8#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25570]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized0' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25616]
+	Parameter INIT bound to: 32'b11111111111111111011111111111111 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized0' (8#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25616]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized0' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25528]
+	Parameter INIT bound to: 8'b11110111 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized0' (8#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25528]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized1' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25528]
+	Parameter INIT bound to: 8'b11111101 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized1' (8#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25528]
+INFO: [Synth 8-638] synthesizing module 'FDRE' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE' (9#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'CARRY4' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:961]
+INFO: [Synth 8-256] done synthesizing module 'CARRY4' (10#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:961]
+WARNING: [Synth 8-350] instance 'count_reg[28]_i_11' of module 'CARRY4' requires 6 connections, but only 5 given [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/steppermotor_wrapper.sv:581]
+WARNING: [Synth 8-350] instance 'count_reg[28]_i_14' of module 'CARRY4' requires 6 connections, but only 5 given [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/steppermotor_wrapper.sv:587]
+WARNING: [Synth 8-689] width (3) of port connection 'CO' does not match port width (4) of module 'CARRY4' [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/steppermotor_wrapper.sv:595]
+WARNING: [Synth 8-350] instance 'count_reg[28]_i_20' of module 'CARRY4' requires 6 connections, but only 5 given [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/steppermotor_wrapper.sv:600]
+WARNING: [Synth 8-350] instance 'count_reg[28]_i_25' of module 'CARRY4' requires 6 connections, but only 5 given [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/steppermotor_wrapper.sv:606]
+WARNING: [Synth 8-689] width (2) of port connection 'CO' does not match port width (4) of module 'CARRY4' [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/steppermotor_wrapper.sv:614]
+WARNING: [Synth 8-350] instance 'count_reg[28]_i_4' of module 'CARRY4' requires 6 connections, but only 5 given [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/steppermotor_wrapper.sv:612]
+WARNING: [Synth 8-689] width (2) of port connection 'CO' does not match port width (4) of module 'CARRY4' [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/steppermotor_wrapper.sv:620]
+WARNING: [Synth 8-350] instance 'count_reg[28]_i_5' of module 'CARRY4' requires 6 connections, but only 5 given [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/steppermotor_wrapper.sv:618]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized1' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25616]
+	Parameter INIT bound to: 32'b10111000111111111011100000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized1' (10#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25616]
+INFO: [Synth 8-638] synthesizing module 'LUT2__parameterized2' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25490]
+	Parameter INIT bound to: 4'b0010 
+INFO: [Synth 8-256] done synthesizing module 'LUT2__parameterized2' (10#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25490]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized1' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25666]
+	Parameter INIT bound to: 64'b0000000000000000111111111111111100010001111100000001000111110000 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized1' (10#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25666]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized2' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25528]
+	Parameter INIT bound to: 8'b01101100 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized2' (10#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25528]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized3' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25528]
+	Parameter INIT bound to: 8'b10111000 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized3' (10#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25528]
+INFO: [Synth 8-638] synthesizing module 'stepmotor' [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/stepmotor.sv:23]
+INFO: [Synth 8-638] synthesizing module 'LUT2__parameterized3' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25490]
+	Parameter INIT bound to: 4'b0110 
+INFO: [Synth 8-256] done synthesizing module 'LUT2__parameterized3' (10#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25490]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized4' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25528]
+	Parameter INIT bound to: 8'b01110100 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized4' (10#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25528]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized2' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25616]
+	Parameter INIT bound to: 32'b10010110111111111001011000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized2' (10#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25616]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized3' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25616]
+	Parameter INIT bound to: 32'b00000000000000001000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized3' (10#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25616]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized2' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25666]
+	Parameter INIT bound to: 64'b0000000000000000000000000000000000000000000000000000000000000001 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized2' (10#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25666]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized6' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25570]
+	Parameter INIT bound to: 16'b1000000000000001 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized6' (10#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25570]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized7' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25570]
+	Parameter INIT bound to: 16'b1001000000001001 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized7' (10#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25570]
+WARNING: [Synth 8-689] width (3) of port connection 'CO' does not match port width (4) of module 'CARRY4' [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/stepmotor.sv:308]
+WARNING: [Synth 8-350] instance 'count_reg[0]_i_1' of module 'CARRY4' requires 6 connections, but only 5 given [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/stepmotor.sv:306]
+WARNING: [Synth 8-350] instance 'count_reg[0]_i_4' of module 'CARRY4' requires 6 connections, but only 5 given [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/stepmotor.sv:319]
+WARNING: [Synth 8-689] width (3) of port connection 'CO' does not match port width (4) of module 'CARRY4' [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/stepmotor.sv:390]
+INFO: [Synth 8-638] synthesizing module 'LUT2__parameterized4' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25490]
+	Parameter INIT bound to: 4'b1001 
+INFO: [Synth 8-256] done synthesizing module 'LUT2__parameterized4' (10#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:25490]
+INFO: [Synth 8-256] done synthesizing module 'stepmotor' (11#1) [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/stepmotor.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'steppermotor_wrapper' (12#1) [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/steppermotor_wrapper.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'top' (13#1) [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/sources_1/new/top.sv:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 386.035 ; gain = 135.180
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 386.035 ; gain = 135.180
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/constrs_1/new/top.xdc]
+Finished Parsing XDC File [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/constrs_1/new/top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.srcs/constrs_1/new/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 694.105 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 694.105 ; gain = 443.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 694.105 ; gain = 443.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 694.105 ; gain = 443.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 694.105 ; gain = 443.250
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 694.105 ; gain = 443.250
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 694.105 ; gain = 443.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 694.105 ; gain = 443.250
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 694.105 ; gain = 443.250
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 694.105 ; gain = 443.250
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 694.105 ; gain = 443.250
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 694.105 ; gain = 443.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    20|
+|3     |LUT1   |     5|
+|4     |LUT2   |    11|
+|5     |LUT3   |    11|
+|6     |LUT4   |    20|
+|7     |LUT5   |     5|
+|8     |LUT6   |     7|
+|9     |FDRE   |    65|
+|10    |IBUF   |     6|
+|11    |OBUF   |     4|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------------------+---------------------+------+
+|      |Instance                     |Module               |Cells |
++------+-----------------------------+---------------------+------+
+|1     |top                          |                     |   155|
+|2     |  steppermotor_wrapper_inst0 |steppermotor_wrapper |   144|
+|3     |    stepmotor_inst0          |stepmotor            |    54|
++------+-----------------------------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 694.105 ; gain = 443.250
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:00:52 . Memory (MB): peak = 694.105 ; gain = 135.180
+Synthesis Optimization Complete : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 694.105 ; gain = 443.250
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 26 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+90 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:04 ; elapsed = 00:01:06 . Memory (MB): peak = 694.105 ; gain = 455.777
+INFO: [Common 17-1381] The checkpoint 'C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/2017 Fall/Labs/Project_ready_Modules/Project_stepmotor/stepmotor.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 694.105 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 17 11:00:04 2017...

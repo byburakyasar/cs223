@@ -1,0 +1,73 @@
+/*
+
+Vivado v2015.2 (64-bit)
+SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+Process ID: 3476
+
+Current time: 	12/16/17 10:01:55 PM AST
+Time zone: 	Arabia Standard Time (Asia/Riyadh)
+
+OS: Windows 7
+Version: 6.1
+Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_25 64-bit
+Java home: 	C:/Xilinx/Vivado/2015.2/tps/win64/jre
+
+User name: 	burak.yasar-ug
+User directory: D:/Users/TEMP.PCLABS.001/Desktop/GameOfCodes
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+Vivado preferences path: D:/Users/TEMP.PCLABS.001/AppData/Roaming/Xilinx/Vivado/2015.2/vivado.ini
+Vivado layouts directory: D:/Users/TEMP.PCLABS.001/AppData/Roaming/Xilinx/Vivado/2015.2/layouts/application
+
+GUI allocated memory:	149 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 438 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: D:\Users\TEMP.PCLABS.001\Desktop\GameOfCodes\GameOfCodes.xpr. Version: Vivado v2015.2 
+// cp:P (cl:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 47 MB (+47068kb) [00:00:08]
+// [Engine Memory]: 385 MB (+252303kb) [00:00:08]
+// [Engine Memory]: 425 MB (+22108kb) [00:00:08]
+// [GUI Memory]: 50 MB (+571kb) [00:00:08]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: open_project D:/Users/TEMP.PCLABS.001/Desktop/GameOfCodes/GameOfCodes.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: GameOfCodes; location: D:/Users/TEMP.PCLABS.001/Desktop/GameOfCodes; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // cp:P (cl:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 55 MB (+2053kb) [00:00:11]
+// HMemoryUtils.trashcanNow. Engine heap size: 442 MB. GUI used memory: 32 MB. Current time: 12/16/17 10:01:57 PM AST
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, GameModule (GameModule.sv)]", 1, true); // A:k (H:JPanel, cl:JFrame) - Node
+// [Engine Memory]: 448 MB (+1658kb) [00:00:13]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, GameModule (GameModule.sv)]", 1, true, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click - Node
+// [GUI Memory]: 59 MB (+1712kb) [00:00:14]
+// Elapsed time: 31 seconds
+selectCodeEditor("GameModule.sv", 160, 468); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("GameModule.sv", 160, 468); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("GameModule.sv", 204, 490); // bj:J (JPanel:JComponent, cl:JFrame)

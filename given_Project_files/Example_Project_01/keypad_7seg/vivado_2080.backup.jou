@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Sun Nov 12 16:57:23 2017
+# Process ID: 2080
+# Current directory: C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/keyboard_matrix
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5496 C:\Users\hamze\Dropbox\Academic\Courses\Bilkent_TA_Digital_Design_CS223\Tutorial_Projects_Vivado_Basys3\keyboard_matrix\keyboard_matrix.xpr
+# Log file: C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/keyboard_matrix/vivado.log
+# Journal file: C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/keyboard_matrix\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/keyboard_matrix/keyboard_matrix.xpr
+update_compile_order -fileset sources_1
+reset_project
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+reset_project
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1

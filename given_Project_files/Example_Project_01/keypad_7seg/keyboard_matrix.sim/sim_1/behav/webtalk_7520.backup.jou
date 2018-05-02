@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Wed Nov 02 16:35:12 2016
+# Process ID: 7520
+# Current directory: D:/Users/hamze/Dropbox/Academic/Courses/Bilkent TA_Digital_Design_CS223/Fall 2016/Labs/Projects_Vivado2016.3_Basys3/keyboard_matrix/keyboard_matrix.sim/sim_1/behav
+# Command line: wbtcv.exe -mode batch -source D:/Users/hamze/Dropbox/Academic/Courses/Bilkent TA_Digital_Design_CS223/Fall 2016/Labs/Projects_Vivado2016.3_Basys3/keyboard_matrix/keyboard_matrix.sim/sim_1/behav/xsim.dir/testbench_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/Users/hamze/Dropbox/Academic/Courses/Bilkent TA_Digital_Design_CS223/Fall 2016/Labs/Projects_Vivado2016.3_Basys3/keyboard_matrix/keyboard_matrix.sim/sim_1/behav/webtalk.log
+# Journal file: D:/Users/hamze/Dropbox/Academic/Courses/Bilkent TA_Digital_Design_CS223/Fall 2016/Labs/Projects_Vivado2016.3_Basys3/keyboard_matrix/keyboard_matrix.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source D:/Users/hamze/Dropbox/Academic/Courses/Bilkent -notrace

@@ -1,0 +1,12 @@
+srcscan starts
+INFO: analyzing module SevSeg_4digit (VERI-9002)
+INFO: analyzing module keypad4X4 (VERI-9002)
+C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/keyboard_matrix/keyboard_matrix.srcs/sources_1/new/keypad4X4.sv(62): WARNING: identifier valid_col_reg is used before its declaration (VERI-1875)
+INFO: analyzing module testbench (VERI-9002)
+INFO: analyzing module top (VERI-9002)
+C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/keyboard_matrix/keyboard_matrix.srcs/sources_1/new/top.sv(46): INFO: undeclared symbol key_valid, assumed default net type wire (VERI-9004)
+Listing tops:
+VeriTop library:xil_defaultlib mod:testbench
+END of tops
+C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/keyboard_matrix/keyboard_matrix.srcs/sim_1/new/testbench.sv(21): INFO: compiling module testbench_default (VERI-1018)
+srcscan exits with return value 0

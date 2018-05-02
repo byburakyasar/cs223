@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Mon Nov 13 12:14:20 2017
+# Process ID: 4292
+# Current directory: C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/stepmotor_netlist_modules
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4444 C:\Users\hamze\Dropbox\Academic\Courses\Bilkent_TA_Digital_Design_CS223\Tutorial_Projects_Vivado_Basys3\stepmotor_netlist_modules\stepmotor.xpr
+# Log file: C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/stepmotor_netlist_modules/vivado.log
+# Journal file: C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/stepmotor_netlist_modules\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/stepmotor_netlist_modules/stepmotor.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source testbench.tcl
+close_sim
+reset_project
+reset_simulation
+reset_project

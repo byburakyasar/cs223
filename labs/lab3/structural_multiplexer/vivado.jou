@@ -1,0 +1,61 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Tue Oct 31 07:47:11 2017
+# Process ID: 2968
+# Log file: D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/vivado.log
+# Journal file: D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.xpr
+open_project D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.xpr
+open_project D:/Users/TEMP.PCLABS.000/Desktop/decoder/decoder.xpr
+current_project decoder_structural
+remove_files -fileset constrs_1 D:/Users/TEMP.PCLABS.000/Desktop/Desktop/Basys3.xdc
+current_project structural_multiplexer
+remove_files -fileset constrs_1 D:/Users/TEMP.PCLABS.000/Desktop/Desktop/Basys3.xdc
+current_project decoder_structural
+current_project decoder
+remove_files -fileset constrs_1 D:/Users/TEMP.PCLABS.000/Desktop/Desktop/Basys3.xdc
+current_project structural_multiplexer
+add_files -fileset constrs_1 -norecurse D:/Users/TEMP.PCLABS.000/Desktop/Basys3.xdc
+current_project decoder_structural
+add_files -fileset constrs_1 -norecurse D:/Users/TEMP.PCLABS.000/Desktop/Basys3.xdc
+current_project decoder
+add_files -fileset constrs_1 -norecurse D:/Users/TEMP.PCLABS.000/Desktop/Basys3.xdc
+launch_simulation
+source testD2to4_decoder.tcl
+current_project decoder_structural
+update_compile_order -fileset sources_1
+current_project decoder
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS.000/Desktop/decoder/decoder.runs/impl_1/D2to4_decoder.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS.000/Desktop/decoder/decoder.runs/impl_1/D2to4_decoder.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+current_project decoder_structural
+launch_simulation
+source testD3to8_decoder.tcl
+close_sim
+reset_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS.000/Desktop/decoder/decoder.runs/impl_1/D2to4_decoder.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_sim
+close_sim
+current_project decoder
+close_project

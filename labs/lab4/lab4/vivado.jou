@@ -1,0 +1,84 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Mon Nov 13 20:01:10 2017
+# Process ID: 5016
+# Log file: D:/Users/TEMP.PCLABS.001/Desktop/lab4/vivado.log
+# Journal file: D:/Users/TEMP.PCLABS.001/Desktop/lab4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Users/TEMP.PCLABS.001/Desktop/lab4/lab4.xpr
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_run impl_1
+disconnect_hw_server localhost
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183713146A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183713146A]
+open_hw_target
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS.001/Desktop/lab4/lab4.runs/impl_1/TwoBitUpCounter.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS.001/Desktop/lab4/lab4.runs/impl_1/TwoBitUpCounter.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_hw_target
+close_hw_target
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Test2BitCounterClk [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS.001/Desktop/lab4/lab4.runs/impl_1/TwoBitUpCounter.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run impl_1
+launch_runs impl_1
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+synth_design -rtl -name rtl_1
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183713146A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183713146A]
+open_hw_target
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS.001/Desktop/lab4/lab4.runs/impl_1/TwoBitUpCounter.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS.001/Desktop/lab4/lab4.runs/impl_1/TwoBitUpCounter.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top TwoBitUpCounter_Clk [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+reset_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_hw_target
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS.001/Desktop/lab4/lab4.runs/impl_1/TwoBitUpCounter_Clk.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_hw_target

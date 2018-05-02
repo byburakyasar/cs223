@@ -1,0 +1,696 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Tue Oct 31 08:20:25 2017
+# Process ID: 1772
+# Log file: D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/vivado.log
+# Journal file: D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'testD3to8_decoder' in fileset 'sim_1'...
+INFO: [USF-XSim-66] Exported 'D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.srcs/sim_1/new/testD3to8_decoder.sv'
+INFO: [USF-XSim-66] Exported 'D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.srcs/sim_1/new/test_decoderfunc.sv'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.sim/sim_1/behav'
+"xvlog -m64 --relax -prj testD3to8_decoder_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.srcs/sources_1/new/D2to4_decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module D2to4_decoder
+INFO: [VRFC 10-311] analyzing module D3to8_decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.srcs/sim_1/new/testD3to8_decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testD3to8_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 274538cc20444baca3f21ec0120b660b --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testD3to8_decoder_behav xil_defaultlib.testD3to8_decoder xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.D2to4_decoder
+Compiling module xil_defaultlib.D3to8_decoder
+Compiling module xil_defaultlib.testD3to8_decoder
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot testD3to8_decoder_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.sim/sim_1/behav/xsim.dir/testD3to8_decoder_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.sim/sim_1/behav/xsim.dir/testD3to8_decoder_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Oct 31 08:21:06 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Oct 31 08:21:06 2017...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testD3to8_decoder_behav -key {Behavioral:sim_1:Functional:testD3to8_decoder} -tclbatch {testD3to8_decoder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source testD3to8_decoder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testD3to8_decoder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 737.891 ; gain = 9.648
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+[Tue Oct 31 08:21:42 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.runs/impl_1/runme.log
+open_hw
+open_project D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'.
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.2
+  **** Build date : Jun 26 2015-16:56:39
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 774.945 ; gain = 0.000
+open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0]
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183713146A
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.runs/impl_1/partd.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+current_project decoder_structural
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.runs/impl_1/partd.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.runs/impl_1/partd.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.runs/impl_1/partd.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-3175] Target jsn-Basys3-210183713146A is no longer available.
+Please use disconnect_hw_server to close the current server connection. Check cable connectivity and that the target board is powered up.
+Restart the hw_server application running on host localhost, port 3121 and then use connect_hw_server to re-establish connection to target.
+close_hw_target
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost/xilinx_tcf/Digilent/210183713146A
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+[Tue Oct 31 08:31:31 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.runs/impl_1/D3to8_decoder.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+update_compile_order -fileset sources_1
+set_property top test_decoderfunc [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.sim/sim_1/behav/testD3to8_decoder_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test_decoderfunc' in fileset 'sim_1'...
+INFO: [USF-XSim-66] Exported 'D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.srcs/sim_1/new/test_decoderfunc.sv'
+INFO: [USF-XSim-66] Exported 'D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.srcs/sim_1/new/testD3to8_decoder.sv'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.sim/sim_1/behav'
+"xvlog -m64 --relax -prj test_decoderfunc_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.srcs/sources_1/new/D2to4_decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module D2to4_decoder
+INFO: [VRFC 10-311] analyzing module D3to8_decoder
+INFO: [VRFC 10-311] analyzing module implement_func
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.srcs/sim_1/new/test_decoderfunc.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_decoderfunc
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 274538cc20444baca3f21ec0120b660b --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_decoderfunc_behav xil_defaultlib.test_decoderfunc xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.D2to4_decoder
+Compiling module xil_defaultlib.D3to8_decoder
+Compiling module xil_defaultlib.implement_func
+Compiling module xil_defaultlib.test_decoderfunc
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot test_decoderfunc_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.sim/sim_1/behav/xsim.dir/test_decoderfunc_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.sim/sim_1/behav/xsim.dir/test_decoderfunc_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Oct 31 08:56:57 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Oct 31 08:56:57 2017...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_decoderfunc_behav -key {Behavioral:sim_1:Functional:test_decoderfunc} -tclbatch {test_decoderfunc.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source test_decoderfunc.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_decoderfunc_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 953.750 ; gain = 0.000
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Tue Oct 31 08:58:24 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.runs/synth_1/runme.log
+[Tue Oct 31 08:58:24 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.runs/impl_1/runme.log
+ERROR: [Labtools 27-3175] Target jsn-Basys3-210183713146A is no longer available.
+Please use disconnect_hw_server to close the current server connection. Check cable connectivity and that the target board is powered up.
+Restart the hw_server application running on host localhost, port 3121 and then use connect_hw_server to re-establish connection to target.
+close_hw_target
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost/xilinx_tcf/Digilent/210183713146A
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.runs/impl_1/implement_func.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-186] 'D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Tue Oct 31 09:05:45 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Oct 31 09:05:45 2017...
+close_project
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test_mux' in fileset 'sim_1'...
+INFO: [USF-XSim-66] Exported 'D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.srcs/sim_1/new/test_mux.sv'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.sim/sim_1/behav'
+"xvlog -m64 --relax -prj test_mux_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.srcs/sources_1/new/mux4to1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4to1
+INFO: [VRFC 10-311] analyzing module mux8to1
+INFO: [VRFC 10-311] analyzing module partd
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.srcs/sim_1/new/test_mux.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 5393cd89d7d84ea2b66e43bf11177b13 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_mux_behav xil_defaultlib.test_mux xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mux4to1
+Compiling module xil_defaultlib.mux8to1
+Compiling module xil_defaultlib.test_mux
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot test_mux_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.sim/sim_1/behav/xsim.dir/test_mux_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.sim/sim_1/behav/xsim.dir/test_mux_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Oct 31 09:07:46 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Oct 31 09:07:46 2017...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_mux_behav -key {Behavioral:sim_1:Functional:test_mux} -tclbatch {test_mux.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source test_mux.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 20000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_mux_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 20000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 953.750 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test_mux' in fileset 'sim_1'...
+INFO: [USF-XSim-66] Exported 'D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.srcs/sim_1/new/test_mux.sv'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.sim/sim_1/behav'
+"xvlog -m64 --relax -prj test_mux_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.srcs/sources_1/new/mux4to1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4to1
+INFO: [VRFC 10-311] analyzing module mux8to1
+INFO: [VRFC 10-311] analyzing module partd
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.srcs/sim_1/new/test_mux.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 5393cd89d7d84ea2b66e43bf11177b13 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_mux_behav xil_defaultlib.test_mux xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mux4to1
+Compiling module xil_defaultlib.mux8to1
+Compiling module xil_defaultlib.test_mux
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot test_mux_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.sim/sim_1/behav/xsim.dir/test_mux_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.sim/sim_1/behav/xsim.dir/test_mux_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Oct 31 09:15:40 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Oct 31 09:15:40 2017...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_mux_behav -key {Behavioral:sim_1:Functional:test_mux} -tclbatch {test_mux.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source test_mux.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 20000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_mux_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 20000ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 967.711 ; gain = 0.000
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Tue Oct 31 09:24:29 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.runs/synth_1/runme.log
+[Tue Oct 31 09:24:29 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.2
+  **** Build date : Jun 26 2015-16:56:39
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 968.301 ; gain = 0.000
+open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0]
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183713146A
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.runs/impl_1/partd.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.runs/impl_1/partd.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.runs/impl_1/partd.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Tue Oct 31 09:32:56 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.runs/synth_1/runme.log
+[Tue Oct 31 09:32:56 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.runs/impl_1/partd.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.runs/impl_1/partd.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.runs/impl_1/partd.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.runs/impl_1/partd.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Tue Oct 31 09:46:47 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.runs/synth_1/runme.log
+[Tue Oct 31 09:46:47 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Tue Oct 31 09:48:23 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.runs/synth_1/runme.log
+[Tue Oct 31 09:48:23 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.runs/impl_1/partd.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Tue Oct 31 09:53:34 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.runs/synth_1/runme.log
+[Tue Oct 31 09:53:34 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.runs/impl_1/partd.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Tue Oct 31 09:56:48 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.runs/synth_1/runme.log
+[Tue Oct 31 09:56:48 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.runs/impl_1/partd.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test_mux' in fileset 'sim_1'...
+INFO: [USF-XSim-66] Exported 'D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.srcs/sim_1/new/test_mux.sv'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.sim/sim_1/behav'
+"xvlog -m64 --relax -prj test_mux_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.srcs/sources_1/new/mux4to1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4to1
+INFO: [VRFC 10-311] analyzing module mux8to1
+INFO: [VRFC 10-311] analyzing module partd
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.srcs/sim_1/new/test_mux.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 5393cd89d7d84ea2b66e43bf11177b13 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_mux_behav xil_defaultlib.test_mux xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mux4to1
+Compiling module xil_defaultlib.mux8to1
+Compiling module xil_defaultlib.test_mux
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot test_mux_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.sim/sim_1/behav/xsim.dir/test_mux_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.sim/sim_1/behav/xsim.dir/test_mux_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Oct 31 09:59:27 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Oct 31 09:59:27 2017...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_mux_behav -key {Behavioral:sim_1:Functional:test_mux} -tclbatch {test_mux.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source test_mux.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 20000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_mux_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 20000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 974.707 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test_mux' in fileset 'sim_1'...
+INFO: [USF-XSim-66] Exported 'D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.srcs/sim_1/new/test_mux.sv'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.sim/sim_1/behav'
+"xvlog -m64 --relax -prj test_mux_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.srcs/sources_1/new/mux4to1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4to1
+INFO: [VRFC 10-311] analyzing module mux8to1
+INFO: [VRFC 10-311] analyzing module partd
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.srcs/sim_1/new/test_mux.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 5393cd89d7d84ea2b66e43bf11177b13 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_mux_behav xil_defaultlib.test_mux xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mux4to1
+Compiling module xil_defaultlib.mux8to1
+Compiling module xil_defaultlib.test_mux
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot test_mux_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.sim/sim_1/behav/xsim.dir/test_mux_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.sim/sim_1/behav/xsim.dir/test_mux_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Oct 31 10:02:07 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Oct 31 10:02:07 2017...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_mux_behav -key {Behavioral:sim_1:Functional:test_mux} -tclbatch {test_mux.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source test_mux.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 20000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_mux_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 20000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 974.707 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 31 10:22:19 2017...

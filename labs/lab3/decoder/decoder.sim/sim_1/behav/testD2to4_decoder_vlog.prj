@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  "../../../decoder.srcs/sources_1/new/D2to4_decoder.sv"
+sv xil_defaultlib  "../../../decoder.srcs/sim_1/new/testD2to4_decoder.sv"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

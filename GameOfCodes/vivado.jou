@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Sat Dec 16 22:24:07 2017
+# Process ID: 1292
+# Log file: D:/Users/TEMP.PCLABS/Desktop/GameOfCodes/vivado.log
+# Journal file: D:/Users/TEMP.PCLABS/Desktop/GameOfCodes\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Users/TEMP.PCLABS/Desktop/GameOfCodes/GameOfCodes.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+launch_runs impl_1
+wait_on_run impl_1
+close [ open D:/Users/TEMP.PCLABS/Desktop/GameOfCodes/GameOfCodes.srcs/sources_1/new/comperator.sv w ]
+add_files D:/Users/TEMP.PCLABS/Desktop/GameOfCodes/GameOfCodes.srcs/sources_1/new/comperator.sv
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1

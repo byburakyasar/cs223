@@ -1,0 +1,252 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Tue Oct 31 07:47:11 2017
+# Process ID: 2968
+# Log file: D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/vivado.log
+# Journal file: D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.xpr
+INFO: [Project 1-313] Project file moved from 'D:/Users/TEMP.PCLABS.000/structural_multiplexer' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/Users/TEMP.PCLABS.000/Desktop/Desktop/Basys3.xdc', nor could it be found using path 'D:/Users/TEMP.PCLABS.000/Desktop/Basys3.xdc'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 723.344 ; gain = 160.660
+open_project D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.xpr
+INFO: [Project 1-313] Project file moved from 'D:/Users/TEMP.PCLABS.000/decoder_structural' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/Users/TEMP.PCLABS.000/Desktop/Desktop/Basys3.xdc', nor could it be found using path 'D:/Users/TEMP.PCLABS.000/Desktop/Basys3.xdc'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'.
+open_project D:/Users/TEMP.PCLABS.000/Desktop/decoder/decoder.xpr
+INFO: [Project 1-313] Project file moved from 'D:/Users/TEMP.PCLABS.000/decoder' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/Users/TEMP.PCLABS.000/Desktop/Desktop/Basys3.xdc', nor could it be found using path 'D:/Users/TEMP.PCLABS.000/Desktop/Basys3.xdc'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'.
+current_project decoder_structural
+remove_files -fileset constrs_1 D:/Users/TEMP.PCLABS.000/Desktop/Desktop/Basys3.xdc
+current_project structural_multiplexer
+remove_files -fileset constrs_1 D:/Users/TEMP.PCLABS.000/Desktop/Desktop/Basys3.xdc
+current_project decoder_structural
+current_project decoder
+remove_files -fileset constrs_1 D:/Users/TEMP.PCLABS.000/Desktop/Desktop/Basys3.xdc
+current_project structural_multiplexer
+add_files -fileset constrs_1 -norecurse D:/Users/TEMP.PCLABS.000/Desktop/Basys3.xdc
+current_project decoder_structural
+add_files -fileset constrs_1 -norecurse D:/Users/TEMP.PCLABS.000/Desktop/Basys3.xdc
+current_project decoder
+add_files -fileset constrs_1 -norecurse D:/Users/TEMP.PCLABS.000/Desktop/Basys3.xdc
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'testD2to4_decoder' in fileset 'sim_1'...
+INFO: [USF-XSim-66] Exported 'D:/Users/TEMP.PCLABS.000/Desktop/decoder/decoder.srcs/sim_1/new/testD2to4_decoder.sv'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'D:/Users/TEMP.PCLABS.000/Desktop/decoder/decoder.sim/sim_1/behav'
+"xvlog -m64 --relax -prj testD2to4_decoder_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Users/TEMP.PCLABS.000/Desktop/decoder/decoder.srcs/sources_1/new/D2to4_decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module D2to4_decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Users/TEMP.PCLABS.000/Desktop/decoder/decoder.srcs/sim_1/new/testD2to4_decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testD2to4_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Users/TEMP.PCLABS.000/Desktop/decoder/decoder.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Users/TEMP.PCLABS.000/Desktop/decoder/decoder.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 9f321a84439a40da9e456d836db435a2 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testD2to4_decoder_behav xil_defaultlib.testD2to4_decoder xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.D2to4_decoder
+Compiling module xil_defaultlib.testD2to4_decoder
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot testD2to4_decoder_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source D:/Users/TEMP.PCLABS.000/Desktop/decoder/decoder.sim/sim_1/behav/xsim.dir/testD2to4_decoder_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'D:/Users/TEMP.PCLABS.000/Desktop/decoder/decoder.sim/sim_1/behav/xsim.dir/testD2to4_decoder_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Oct 31 08:00:01 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Oct 31 08:00:01 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 806.496 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Users/TEMP.PCLABS.000/Desktop/decoder/decoder.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testD2to4_decoder_behav -key {Behavioral:sim_1:Functional:testD2to4_decoder} -tclbatch {testD2to4_decoder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source testD2to4_decoder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testD2to4_decoder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 806.496 ; gain = 0.000
+current_project decoder_structural
+update_compile_order -fileset sources_1
+current_project decoder
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Tue Oct 31 08:07:12 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS.000/Desktop/decoder/decoder.runs/synth_1/runme.log
+[Tue Oct 31 08:07:12 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS.000/Desktop/decoder/decoder.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.2
+  **** Build date : Jun 26 2015-16:56:39
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0]
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183713146A
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS.000/Desktop/decoder/decoder.runs/impl_1/D2to4_decoder.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS.000/Desktop/decoder/decoder.runs/impl_1/D2to4_decoder.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+current_project decoder_structural
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'testD3to8_decoder' in fileset 'sim_1'...
+INFO: [USF-XSim-66] Exported 'D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.srcs/sim_1/new/testD3to8_decoder.sv'
+INFO: [USF-XSim-66] Exported 'D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.srcs/sim_1/new/test_decoderfunc.sv'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.sim/sim_1/behav'
+"xvlog -m64 --relax -prj testD3to8_decoder_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.srcs/sources_1/new/D2to4_decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module D2to4_decoder
+INFO: [VRFC 10-311] analyzing module D3to8_decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.srcs/sim_1/new/testD3to8_decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testD3to8_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 274538cc20444baca3f21ec0120b660b --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testD3to8_decoder_behav xil_defaultlib.testD3to8_decoder xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.D2to4_decoder
+Compiling module xil_defaultlib.D3to8_decoder
+Compiling module xil_defaultlib.testD3to8_decoder
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot testD3to8_decoder_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.sim/sim_1/behav/xsim.dir/testD3to8_decoder_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.sim/sim_1/behav/xsim.dir/testD3to8_decoder_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Oct 31 08:11:46 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Oct 31 08:11:46 2017...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testD3to8_decoder_behav -key {Behavioral:sim_1:Functional:testD3to8_decoder} -tclbatch {testD3to8_decoder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source testD3to8_decoder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+ERROR: [Vivado 12-106] *** Exception: java.lang.StringIndexOutOfBoundsException: String index out of range: -1 (See D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/vivado_pid2968.debug)
+ERROR: [Common 17-39] 'add_wave' failed due to earlier errors.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testD3to8_decoder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 864.090 ; gain = 0.000
+close_sim
+ERROR: [Simtcl 6-165] Wave configuration has been modified. Use -force to close simulation without saving wave configuration.
+reset_run synth_1
+launch_runs impl_1
+[Tue Oct 31 08:13:23 2017] Launched synth_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.runs/synth_1/runme.log
+[Tue Oct 31 08:13:23 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream
+[Tue Oct 31 08:14:23 2017] Launched impl_1...
+Run output will be captured here: D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS.000/Desktop/decoder/decoder.runs/impl_1/D2to4_decoder.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Simtcl 6-165] Wave configuration has been modified. Use -force to close simulation without saving wave configuration.
+close_sim
+ERROR: [Simulator 45-6] No active opened simulation.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source D:/Users/TEMP.PCLABS.000/Desktop/decoder/decoder.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-186] 'D:/Users/TEMP.PCLABS.000/Desktop/decoder/decoder.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Tue Oct 31 08:18:46 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Oct 31 08:18:46 2017...
+current_project decoder
+close_project

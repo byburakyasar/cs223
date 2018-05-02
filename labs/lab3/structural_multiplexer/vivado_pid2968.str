@@ -1,0 +1,1169 @@
+/*
+
+Vivado v2015.2 (64-bit)
+SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+Process ID: 2968
+
+Current time: 	10/31/17 7:47:34 AM EET
+Time zone: 	Eastern European Time (Europe/Athens)
+
+OS: Windows 7
+Version: 6.1
+Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_25 64-bit
+Java home: 	C:/Xilinx/Vivado/2015.2/tps/win64/jre
+
+User name: 	burak.yasar-ug
+User directory: D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+Vivado preferences path: D:/Users/TEMP.PCLABS.000/AppData/Roaming/Xilinx/Vivado/2015.2/vivado.ini
+Vivado layouts directory: D:/Users/TEMP.PCLABS.000/AppData/Roaming/Xilinx/Vivado/2015.2/layouts/application
+
+GUI allocated memory:	156 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 446 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// cp:P (cl:JFrame):  Open Project : addNotify
+// Opening Vivado Project: D:\Users\TEMP.PCLABS.000\Desktop\structural_multiplexer\structural_multiplexer.xpr. Version: Vivado v2015.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/structural_multiplexer.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'D:/Users/TEMP.PCLABS.000/structural_multiplexer' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 41 MB (+40265kb) [00:00:10]
+// [Engine Memory]: 369 MB (+235563kb) [00:00:10]
+// [GUI Memory]: 44 MB (+720kb) [00:00:10]
+// [Engine Memory]: 418 MB (+32174kb) [00:00:10]
+// [GUI Memory]: 54 MB (+8486kb) [00:00:12]
+// [Engine Memory]: 441 MB (+2198kb) [00:00:12]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 57 MB (+436kb) [00:00:13]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 450 MB. GUI used memory: 29 MB. Current time: 10/31/17 7:47:35 AM EET
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// Project name: structural_multiplexer; location: D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer; part: xc7a35tcpg236-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 723.344 ; gain = 160.660 
+dismissDialog("Open Project"); // cp:P (cl:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// a:a (cl:JFrame): Critical Messages: addNotify
+// Elapsed time: 25 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, a:a)
+dismissDialog("Critical Messages"); // a:a (cl:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2); // A:k (H:JPanel, cl:JFrame)
+// [Engine Memory]: 467 MB (+4259kb) [00:00:45]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3.xdc]", 4, false); // A:k (H:JPanel, cl:JFrame)
+// [GUI Memory]: 71 MB (+11656kb) [00:00:46]
+// HMemoryUtils.trashcanNow. Engine heap size: 470 MB. GUI used memory: 35 MB. Current time: 10/31/17 7:48:10 AM EET
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3.xdc]", 4, false, false, false, false, true, false); // A:k (H:JPanel, cl:JFrame) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, partd (mux4to1.sv)]", 1, true); // A:k (H:JPanel, cl:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, partd (mux4to1.sv)]", 1, true, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click - Node
+// Elapsed time: 154 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3.xdc]", 5, false, false, false, false, true, false); // A:k (H:JPanel, cl:JFrame) - Popup Trigger
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // R:JideMenu (CommandMenuBar:CommandBar, cl:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_PROJECT, "Open Project..."); // ab:JMenuItem (JPopupMenu:JComponent, cl:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // R:JideMenu (CommandMenuBar:CommandBar, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+setFileChooser("D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.xpr");
+// Opening Vivado Project: D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.xpr. Version: Vivado v2015.2 
+// cp:P (cl:JFrame):  Open Project : addNotify
+selectButton("PAResourceOtoP.PABaseTab_WOULD_YOU_LIKE_TO_CLOSE_CURRENTLY_No", "No"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'D:/Users/TEMP.PCLABS.000/decoder_structural' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 76 MB (+1176kb) [00:03:45]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: decoder_structural; location: D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural; part: xc7a35tcpg236-1
+// 'i' command handler elapsed time: 7 seconds
+dismissDialog("Open Project"); // cp:P (cl:JFrame)
+// [Engine Memory]: 517 MB (+27677kb) [00:03:46]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// a:a (cl:JFrame): Critical Messages: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 523 MB. GUI used memory: 45 MB. Current time: 10/31/17 7:51:10 AM EET
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, a:a)
+dismissDialog("Critical Messages"); // a:a (cl:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // R:JideMenu (CommandMenuBar:CommandBar, cl:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_PROJECT, "Open Project..."); // ab:JMenuItem (JPopupMenu:JComponent, cl:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // R:JideMenu (CommandMenuBar:CommandBar, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+setFileChooser("D:/Users/TEMP.PCLABS.000/Desktop/decoder/decoder.xpr");
+// Opening Vivado Project: D:/Users/TEMP.PCLABS.000/Desktop/decoder/decoder.xpr. Version: Vivado v2015.2 
+// cp:P (cl:JFrame):  Open Project : addNotify
+selectButton("PAResourceOtoP.PABaseTab_WOULD_YOU_LIKE_TO_CLOSE_CURRENTLY_No", "No"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project D:/Users/TEMP.PCLABS.000/Desktop/decoder/decoder.xpr 
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'D:/Users/TEMP.PCLABS.000/decoder' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: decoder; location: D:/Users/TEMP.PCLABS.000/Desktop/decoder; part: xc7a35tcpg236-1
+// 'i' command handler elapsed time: 5 seconds
+// [GUI Memory]: 84 MB (+4890kb) [00:03:58]
+dismissDialog("Open Project"); // cp:P (cl:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// a:a (cl:JFrame): Critical Messages: addNotify
+// a:a (cl:JFrame): Critical Messages: addNotify
+dismissDialog("Critical Messages"); // a:a (cl:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3.xdc]", 4, false); // A:k (H:JPanel, cl:JFrame)
+// Tcl Message: current_project decoder_structural 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3.xdc]", 4, false, false, false, false, true, false); // A:k (H:JPanel, cl:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// az:P (cl:JFrame): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, az:P)
+dismissDialog("Remove Sources"); // az:P (cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3.xdc]", 4, false); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3.xdc]", 4, false, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click
+// ab:ah (cl:JFrame): Unable to Open File: addNotify
+selectButton(PAResourceOtoP.OpenFileAction_OK, "OK"); // a:JButton (JPanel:JComponent, ab:ah)
+dismissDialog("Unable to Open File"); // ab:ah (cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3.xdc]", 4, false); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3.xdc]", 4, false, false, false, false, true, false); // A:k (H:JPanel, cl:JFrame) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // X:JMenu (ai:JPopupMenu, cl:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // X:JMenu (ai:JPopupMenu, cl:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_CONSTRAINT_SETS, "Edit Constraints Sets..."); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_CONSTRAINT_SETS
+// ab:ag (cl:JFrame): Edit Constraints Sets: addNotify
+// 'aa' command handler elapsed time: 5 seconds
+dismissDialog("Edit Constraints Sets"); // ab:ag (cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3.xdc]", 4, false, false, false, false, true, false); // A:k (H:JPanel, cl:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// az:P (cl:JFrame): Remove Sources: addNotify
+// [GUI Memory]: 91 MB (+2494kb) [00:04:28]
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, az:P)
+dismissDialog("Remove Sources"); // az:P (cl:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files -fileset constrs_1 D:/Users/TEMP.PCLABS.000/Desktop/Desktop/Basys3.xdc 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // w:Y (v:H, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (cl:JFrame): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES, "Add or create constraints"); // a:JRadioButton (JPanel:JComponent, b:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_ADD_EXISTING_OR_CREATE_NEW_CONSTRAINTS, "Add"); // w:JideButton (CommandBar:DockableBar, b:g)
+selectMenuItem(PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES, "Add Files..."); // ab:JMenuItem (ai:JPopupMenu, b:g)
+// Elapsed time: 13 seconds
+dismissFileChooser();
+// 'f' command handler elapsed time: 19 seconds
+// [GUI Memory]: 98 MB (+2841kb) [00:04:52]
+dismissDialog("Add Sources"); // b:g (cl:JFrame)
+dismissDialog("Critical Messages"); // a:a (cl:JFrame)
+// Elapsed time: 36 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3.xdc]", 5, false); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3.xdc]", 5, false, false, false, false, true, false); // A:k (H:JPanel, cl:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// az:P (cl:JFrame): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, az:P)
+dismissDialog("Remove Sources"); // az:P (cl:JFrame)
+// Tcl Message: current_project structural_multiplexer 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files -fileset constrs_1 D:/Users/TEMP.PCLABS.000/Desktop/Desktop/Basys3.xdc 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 3, false); // A:k (H:JPanel, cl:JFrame)
+// Tcl Message: current_project decoder_structural 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 3, false, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2, true); // A:k (H:JPanel, cl:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2, true, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click - Node
+// PAPropertyPanels.initPanels (Basys3.xdc) elapsed time: 0.3s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3.xdc]", 4, false); // A:k (H:JPanel, cl:JFrame)
+// Tcl Message: current_project decoder 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3.xdc]", 4, false, false, false, false, true, false); // A:k (H:JPanel, cl:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// az:P (cl:JFrame): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, az:P)
+dismissDialog("Remove Sources"); // az:P (cl:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files -fileset constrs_1 D:/Users/TEMP.PCLABS.000/Desktop/Desktop/Basys3.xdc 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // w:Y (v:H, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (cl:JFrame): Add Sources: addNotify
+dismissDialog("Add Sources"); // b:g (cl:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // w:Y (v:H, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (cl:JFrame): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_ADD_EXISTING_OR_CREATE_NEW_CONSTRAINTS, (String) null); // w:JideButton (JPanel:JComponent, b:g)
+selectMenuItem(PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES, "Add Files..."); // ab:JMenuItem (ai:JPopupMenu, b:g)
+setFileChooser("D:/Users/TEMP.PCLABS.000/Desktop/Basys3.xdc");
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// 'f' command handler elapsed time: 10 seconds
+dismissDialog("Add Sources"); // b:g (cl:JFrame)
+// Tcl Message: current_project structural_multiplexer 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset constrs_1 -norecurse D:/Users/TEMP.PCLABS.000/Desktop/Basys3.xdc 
+// [GUI Memory]: 104 MB (+1354kb) [00:06:06]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 4, true); // A:k (H:JPanel, cl:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 4, true, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3.xdc]", 5, false); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3.xdc]", 5, false, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 6, true); // A:k (H:JPanel, cl:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 6, true, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 6, true); // A:k (H:JPanel, cl:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 7, true); // A:k (H:JPanel, cl:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 7, true, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, test_mux (test_mux.sv)]", 8, true); // A:k (H:JPanel, cl:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, test_mux (test_mux.sv)]", 8, true, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mux4to1.sv", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+// Elapsed time: 43 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3.xdc", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mux4to1.sv", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3.xdc", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // w:Y (v:H, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (cl:JFrame): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_ADD_EXISTING_OR_CREATE_NEW_CONSTRAINTS, "Add"); // w:JideButton (CommandBar:DockableBar, b:g)
+selectMenuItem(PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES, "Add Files..."); // ab:JMenuItem (ai:JPopupMenu, b:g)
+setFileChooser("D:/Users/TEMP.PCLABS.000/Desktop/Basys3.xdc");
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// 'f' command handler elapsed time: 6 seconds
+dismissDialog("Add Sources"); // b:g (cl:JFrame)
+// Tcl Message: current_project decoder_structural 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset constrs_1 -norecurse D:/Users/TEMP.PCLABS.000/Desktop/Basys3.xdc 
+// [GUI Memory]: 110 MB (+998kb) [00:07:48]
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // w:Y (v:H, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (cl:JFrame): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_ADD_EXISTING_OR_CREATE_NEW_CONSTRAINTS, "Add"); // w:JideButton (CommandBar:DockableBar, b:g)
+selectMenuItem(PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES, "Add Files..."); // ab:JMenuItem (ai:JPopupMenu, b:g)
+setFileChooser("D:/Users/TEMP.PCLABS.000/Desktop/Basys3.xdc");
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// 'f' command handler elapsed time: 6 seconds
+dismissDialog("Add Sources"); // b:g (cl:JFrame)
+// Tcl Message: current_project decoder 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset constrs_1 -norecurse D:/Users/TEMP.PCLABS.000/Desktop/Basys3.xdc 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4, true); // A:k (H:JPanel, cl:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, testD2to4_decoder (testD2to4_decoder.sv)]", 6, true); // A:k (H:JPanel, cl:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, testD2to4_decoder (testD2to4_decoder.sv)]", 6, true, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, D2to4_decoder (D2to4_decoder.sv)]", 1, false); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, D2to4_decoder (D2to4_decoder.sv)]", 1, false, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 3, true); // A:k (H:JPanel, cl:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 3, true, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click - Node
+// [Engine Memory]: 544 MB (+1113kb) [00:08:09]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3.xdc]", 4, false); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3.xdc]", 4, false); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3.xdc]", 4, false, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 544 MB. GUI used memory: 66 MB. Current time: 10/31/17 7:55:36 AM EET
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "D2to4_decoder.sv", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+// Elapsed time: 126 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3.xdc", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectCodeEditor("Basys3.xdc", 318, 195); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 36 seconds
+selectCodeEditor("Basys3.xdc", 38, 280, false, false, false, true, false); // bj:J (JPanel:JComponent, cl:JFrame) - Popup Trigger
+selectMenuItem(RDIResource.HInputHandler_TOGGLE_LINE_COMMENTS, "Toggle Line Comments"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+selectCodeEditor("Basys3.xdc", 467, 351); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Basys3.xdc", 377, 279); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Basys3.xdc", 28, 204, false, false, false, true, false); // bj:J (JPanel:JComponent, cl:JFrame) - Popup Trigger
+selectMenuItem(RDIResource.HInputHandler_TOGGLE_LINE_COMMENTS, "Toggle Line Comments"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+selectCodeEditor("Basys3.xdc", 298, 297); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Basys3.xdc", 415, 278); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Basys3.xdc", 15, 263, false, false, false, true, false); // bj:J (JPanel:JComponent, cl:JFrame) - Popup Trigger
+selectCodeEditor("Basys3.xdc", 458, 454); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Basys3.xdc", 419, 384); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Basys3.xdc", 24, 270, false, false, false, true, false); // bj:J (JPanel:JComponent, cl:JFrame) - Popup Trigger
+selectMenuItem(RDIResource.HInputHandler_TOGGLE_LINE_COMMENTS, "Toggle Line Comments"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "D2to4_decoder.sv", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3.xdc", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectCodeEditor("Basys3.xdc", 327, 264); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 52 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "testD2to4_decoder.sv", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:H, cl:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// d:cp (cl:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'testD2to4_decoder' in fileset 'sim_1'... INFO: [USF-XSim-66] Exported 'D:/Users/TEMP.PCLABS.000/Desktop/decoder/decoder.srcs/sim_1/new/testD2to4_decoder.sv' INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE' step in 'D:/Users/TEMP.PCLABS.000/Desktop/decoder/decoder.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: "xvlog -m64 --relax -prj testD2to4_decoder_vlog.prj" INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Users/TEMP.PCLABS.000/Desktop/decoder/decoder.srcs/sources_1/new/D2to4_decoder.sv" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module D2to4_decoder INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Users/TEMP.PCLABS.000/Desktop/decoder/decoder.srcs/sim_1/new/testD2to4_decoder.sv" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module testD2to4_decoder INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Users/TEMP.PCLABS.000/Desktop/decoder/decoder.sim/sim_1/behav/glbl.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module glbl 
+// Tcl Message: INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Users/TEMP.PCLABS.000/Desktop/decoder/decoder.sim/sim_1/behav' 
+// Tcl Message: Built simulation snapshot testD2to4_decoder_behav  ****** Webtalk v2015.2 (64-bit)   **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015   **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015     ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.  source D:/Users/TEMP.PCLABS.000/Desktop/decoder/decoder.sim/sim_1/behav/xsim.dir/testD2to4_decoder_behav/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message: INFO: [Common 17-186] 'D:/Users/TEMP.PCLABS.000/Desktop/decoder/decoder.sim/sim_1/behav/xsim.dir/testD2to4_decoder_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Oct 31 08:00:01 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html. INFO: [Common 17-206] Exiting Webtalk at Tue Oct 31 08:00:01 2017... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 806.496 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Users/TEMP.PCLABS.000/Desktop/decoder/decoder.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "testD2to4_decoder_behav -key {Behavioral:sim_1:Functional:testD2to4_decoder} -tclbatch {testD2to4_decoder.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2015.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: source testD2to4_decoder.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// [GUI Memory]: 117 MB (+632kb) [00:12:42]
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'testD2to4_decoder_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 806.496 ; gain = 0.000 
+// 'c' command handler elapsed time: 9 seconds
+// [Engine Memory]: 573 MB (+1338kb) [00:12:42]
+dismissDialog("Run Simulation"); // d:cp (cl:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 574 MB. GUI used memory: 72 MB. Current time: 10/31/17 8:00:06 AM EET
+// Elapsed time: 11 seconds
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 574 MB. GUI used memory: 89 MB. Current time: 10/31/17 8:00:16 AM EET
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 14, 110); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 574 MB. GUI used memory: 84 MB. Current time: 10/31/17 8:00:24 AM EET
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 613, 147); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 574 MB. GUI used memory: 81 MB. Current time: 10/31/17 8:00:26 AM EET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 574 MB. GUI used memory: 72 MB. Current time: 10/31/17 8:00:26 AM EET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 574 MB. GUI used memory: 72 MB. Current time: 10/31/17 8:00:26 AM EET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 574 MB. GUI used memory: 75 MB. Current time: 10/31/17 8:00:26 AM EET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 574 MB. GUI used memory: 72 MB. Current time: 10/31/17 8:00:26 AM EET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 128, 135); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 574 MB. GUI used memory: 77 MB. Current time: 10/31/17 8:00:28 AM EET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 574 MB. GUI used memory: 75 MB. Current time: 10/31/17 8:00:28 AM EET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 574 MB. GUI used memory: 75 MB. Current time: 10/31/17 8:00:28 AM EET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 574 MB. GUI used memory: 75 MB. Current time: 10/31/17 8:00:28 AM EET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 574 MB. GUI used memory: 75 MB. Current time: 10/31/17 8:00:28 AM EET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 574 MB. GUI used memory: 75 MB. Current time: 10/31/17 8:00:28 AM EET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 574 MB. GUI used memory: 75 MB. Current time: 10/31/17 8:00:28 AM EET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 574 MB. GUI used memory: 75 MB. Current time: 10/31/17 8:00:28 AM EET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 574 MB. GUI used memory: 72 MB. Current time: 10/31/17 8:00:29 AM EET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 574 MB. GUI used memory: 76 MB. Current time: 10/31/17 8:00:30 AM EET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 574 MB. GUI used memory: 74 MB. Current time: 10/31/17 8:00:30 AM EET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 574 MB. GUI used memory: 76 MB. Current time: 10/31/17 8:00:30 AM EET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 574 MB. GUI used memory: 72 MB. Current time: 10/31/17 8:00:31 AM EET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 334, 144); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 581 MB. GUI used memory: 72 MB. Current time: 10/31/17 8:00:34 AM EET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 581 MB. GUI used memory: 75 MB. Current time: 10/31/17 8:00:34 AM EET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 581 MB. GUI used memory: 75 MB. Current time: 10/31/17 8:00:34 AM EET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 581 MB. GUI used memory: 75 MB. Current time: 10/31/17 8:00:34 AM EET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 581 MB. GUI used memory: 76 MB. Current time: 10/31/17 8:00:34 AM EET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 581 MB. GUI used memory: 75 MB. Current time: 10/31/17 8:00:34 AM EET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 581 MB. GUI used memory: 76 MB. Current time: 10/31/17 8:00:34 AM EET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 581 MB. GUI used memory: 76 MB. Current time: 10/31/17 8:00:34 AM EET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 581 MB. GUI used memory: 76 MB. Current time: 10/31/17 8:00:34 AM EET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 581 MB. GUI used memory: 76 MB. Current time: 10/31/17 8:00:34 AM EET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 581 MB. GUI used memory: 80 MB. Current time: 10/31/17 8:00:36 AM EET
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 581 MB. GUI used memory: 77 MB. Current time: 10/31/17 8:00:38 AM EET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 581 MB. GUI used memory: 76 MB. Current time: 10/31/17 8:00:38 AM EET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 581 MB. GUI used memory: 81 MB. Current time: 10/31/17 8:00:38 AM EET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 581 MB. GUI used memory: 85 MB. Current time: 10/31/17 8:00:38 AM EET
+// Elapsed time: 25 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // w:Y (v:H, cl:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3.xdc", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "D2to4_decoder.sv", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+// [GUI Memory]: 124 MB (+1436kb) [00:13:45]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "testD2to4_decoder.sv", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+// [GUI Memory]: 132 MB (+1952kb) [00:13:48]
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, implement_func (D2to4_decoder.sv)]", 1, true); // A:k (H:JPanel, cl:JFrame) - Node
+// Tcl Message: current_project decoder_structural 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, implement_func (D2to4_decoder.sv)]", 1, true, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 5, true); // A:k (H:JPanel, cl:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 6, true); // A:k (H:JPanel, cl:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 6, true, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, testD3to8_decoder (testD3to8_decoder.sv)]", 7, true); // A:k (H:JPanel, cl:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, testD3to8_decoder (testD3to8_decoder.sv)]", 7, true, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, test_decoderfunc (test_decoderfunc.sv)]", 9, true); // A:k (H:JPanel, cl:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, test_decoderfunc (test_decoderfunc.sv)]", 9, true, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 4, true); // A:k (H:JPanel, cl:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 4, true, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3.xdc]", 5, false); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3.xdc]", 5, false); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3.xdc]", 5, false); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3.xdc]", 5, false, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "D2to4_decoder.sv", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3.xdc", 4); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "testD3to8_decoder.sv", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "D2to4_decoder.sv", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectCodeEditor("D2to4_decoder.sv", 115, 576); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("D2to4_decoder.sv", 19, 404, false, false, false, true, false); // bj:J (JPanel:JComponent, cl:JFrame) - Popup Trigger
+selectMenuItem(RDIResource.HInputHandler_TOGGLE_LINE_COMMENTS, "Toggle Line Comments"); // ab:JMenuItem (ai:JPopupMenu, Popup:JWindow)
+selectCodeEditor("D2to4_decoder.sv", 274, 362); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 118 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3.xdc", 4); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectCodeEditor("Basys3.xdc", 380, 332); // bj:J (JPanel:JComponent, cl:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 596 MB. GUI used memory: 78 MB. Current time: 10/31/17 8:04:16 AM EET
+typeControlKey((HResource) null, "Basys3.xdc", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Basys3.xdc", 392, 333); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "Basys3.xdc", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 11 seconds
+typeControlKey(null, null, 'z');
+selectCodeEditor("Basys3.xdc", 381, 333); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "Basys3.xdc", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Basys3.xdc", 396, 329); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "Basys3.xdc", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Basys3.xdc", 25, 348); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Basys3.xdc", 67, 366); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Basys3.xdc", 32, 387); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Basys3.xdc", 71, 401); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Basys3.xdc", 36, 367); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Basys3.xdc", 36, 419); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Basys3.xdc", 72, 438); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Basys3.xdc", 36, 451); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Basys3.xdc", 71, 465); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("Basys3.xdc", 390, 334); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Basys3.xdc", 374, 331); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Basys3.xdc", 374, 330, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("Basys3.xdc", 372, 331); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Basys3.xdc", 371, 334); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Basys3.xdc", 371, 365); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Basys3.xdc", 369, 333); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Basys3.xdc", 8, 213, false, false, false, true, false); // bj:J (JPanel:JComponent, cl:JFrame) - Popup Trigger
+selectMenuItem(RDIResource.HInputHandler_TOGGLE_LINE_COMMENTS, "Toggle Line Comments"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+selectCodeEditor("Basys3.xdc", 311, 352); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Basys3.xdc", 300, 351); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3.xdc", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectCodeEditor("Basys3.xdc", 354, 505); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 19 seconds
+selectCodeEditor("Basys3.xdc", 386, 567); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Basys3.xdc", 12, 452, false, false, false, true, false); // bj:J (JPanel:JComponent, cl:JFrame) - Popup Trigger
+selectMenuItem(RDIResource.HInputHandler_TOGGLE_LINE_COMMENTS, "Toggle Line Comments"); // ab:JMenuItem (ai:JPopupMenu, Popup:JWindow)
+selectCodeEditor("Basys3.xdc", 377, 433); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Basys3.xdc", 6, 312, false, false, false, true, false); // bj:J (JPanel:JComponent, cl:JFrame) - Popup Trigger
+selectMenuItem(RDIResource.HInputHandler_TOGGLE_LINE_COMMENTS, "Toggle Line Comments"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 22 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "testD2to4_decoder.sv", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "D2to4_decoder.sv", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:H, cl:JFrame)
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 334, 144); // o:a (JViewport:JComponent, cl:JFrame)Waveform: addNotify
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 334, 144); // o:a (JViewport:JComponent, cl:JFrame)Waveform: addNotify
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 334, 144); // o:a (JViewport:JComponent, cl:JFrame)Waveform: addNotify
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 276, 304); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 353, 129); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 596 MB. GUI used memory: 105 MB. Current time: 10/31/17 8:06:51 AM EET
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 9, 96); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 18, 94); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 27, 89); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 596 MB. GUI used memory: 87 MB. Current time: 10/31/17 8:06:55 AM EET
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 2, 71); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 36, 124); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 33, 145); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 596 MB. GUI used memory: 85 MB. Current time: 10/31/17 8:06:58 AM EET
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 21, 174); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 15, 71); // o:a (JViewport:JComponent, cl:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 596 MB. GUI used memory: 84 MB. Current time: 10/31/17 8:07:01 AM EET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Bitstream Settings]", 24, false); // w:Y (v:H, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_BITSTREAM_SETTINGS
+// Project Settings: addNotify
+dismissDialog("Project Settings"); // k:br (cl:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // w:Y (v:H, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// ap:bI (cl:JFrame): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, ap:bI)
+// cp:P (cl:JFrame):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // ap:bI (cl:JFrame)
+// Tcl Message: current_project decoder 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // cp:P (cl:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// Tcl Message: [Tue Oct 31 08:07:12 2017] Launched synth_1... Run output will be captured here: D:/Users/TEMP.PCLABS.000/Desktop/decoder/decoder.runs/synth_1/runme.log [Tue Oct 31 08:07:12 2017] Launched impl_1... Run output will be captured here: D:/Users/TEMP.PCLABS.000/Desktop/decoder/decoder.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// Q:ap (cl:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 76 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a:JRadioButton (JPanel:JComponent, Q:ap)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, Q:ap)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+dismissDialog("Bitstream Generation Completed"); // Q:ap (cl:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // i:l (JPanel:JComponent, cl:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// cp:P (cl:JFrame):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2015.2   **** Build date : Jun 26 2015-16:56:39     ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0] 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183713146A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS.000/Desktop/decoder/decoder.runs/impl_1/D2to4_decoder.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: current_hw_device [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// [Engine Memory]: 632 MB (+32259kb) [00:21:13]
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // cp:P (cl:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // i:l (JPanel:JComponent, cl:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 636 MB. GUI used memory: 83 MB. Current time: 10/31/17 8:08:37 AM EET
+selectMenuItem((HResource) null, "xc7a35t_0"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aC:ag (cl:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aC:ag)
+// cp:P (cl:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aC:ag (cl:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS.000/Desktop/decoder/decoder.runs/impl_1/D2to4_decoder.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // cp:P (cl:JFrame)
+// [Engine Memory]: 665 MB (+1524kb) [00:21:21]
+// Elapsed time: 45 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "test_decoderfunc.sv", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "testD3to8_decoder.sv", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3.xdc", 4); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("Basys3.xdc", 303, 267); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "testD3to8_decoder.sv", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "D2to4_decoder.sv", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "testD3to8_decoder.sv", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "test_decoderfunc.sv", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3.xdc", 4); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectCodeEditor("Basys3.xdc", 307, 196); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 19 seconds
+selectCodeEditor("Basys3.xdc", 334, 334); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 43 seconds
+selectCodeEditor("Basys3.xdc", 375, 454); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Basys3.xdc", 12, 197, false, false, false, true, false); // bj:J (JPanel:JComponent, cl:JFrame) - Popup Trigger
+selectMenuItem(RDIResource.HInputHandler_TOGGLE_LINE_COMMENTS, "Toggle Line Comments"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+selectCodeEditor("Basys3.xdc", 375, 179); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Basys3.xdc", 6, 61, false, false, false, true, false); // bj:J (JPanel:JComponent, cl:JFrame) - Popup Trigger
+selectMenuItem(RDIResource.HInputHandler_TOGGLE_LINE_COMMENTS, "Toggle Line Comments"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+selectCodeEditor("Basys3.xdc", 416, 173); // bj:J (JPanel:JComponent, cl:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:H, cl:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// d:cp (cl:JFrame):  Run Simulation : addNotify
+// Tcl Message: current_project decoder_structural 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'testD3to8_decoder' in fileset 'sim_1'... INFO: [USF-XSim-66] Exported 'D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.srcs/sim_1/new/testD3to8_decoder.sv' INFO: [USF-XSim-66] Exported 'D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.srcs/sim_1/new/test_decoderfunc.sv' INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE' step in 'D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.sim/sim_1/behav' 
+// Tcl Message:  ****** Webtalk v2015.2 (64-bit)   **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015   **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015     ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.  source D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.sim/sim_1/behav/xsim.dir/testD3to8_decoder_behav/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [Common 17-186] 'D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.sim/sim_1/behav/xsim.dir/testD3to8_decoder_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Oct 31 08:11:46 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html. INFO: [Common 17-206] Exiting Webtalk at Tue Oct 31 08:11:46 2017... 
+// Tcl Message: INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "testD3to8_decoder_behav -key {Behavioral:sim_1:Functional:testD3to8_decoder} -tclbatch {testD3to8_decoder.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2015.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+/*
+#-------------------------------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# Current time: 10/31/17 8:11:48 AM EET
+# Process ID: 2968
+# Platform: Windows
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx
+# Technical Support with this file and a testcase attached.
+#-------------------------------------------------------------------------------
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1 (See D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/vivado_pid2968.debug)
+*/
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: source testD3to8_decoder.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// Tcl Message: ERROR: [Vivado 12-106] *** Exception: java.lang.StringIndexOutOfBoundsException: String index out of range: -1 (See D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/vivado_pid2968.debug) 
+// Tcl Message: ERROR: [Common 17-39] 'add_wave' failed due to earlier errors. 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'testD3to8_decoder_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 864.090 ; gain = 0.000 
+// a:a (cl:JFrame): Critical Messages: addNotify
+// 'c' command handler elapsed time: 13 seconds
+// Elapsed time: 17 seconds
+dismissDialog("Critical Messages"); // a:a (cl:JFrame)
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "test_decoderfunc.sv", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "testD3to8_decoder.sv", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "D2to4_decoder.sv", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectCodeEditor("D2to4_decoder.sv", 178, 442); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("D2to4_decoder.sv", 170, 432); // bj:J (JPanel:JComponent, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "testD3to8_decoder.sv", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "D2to4_decoder.sv", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3.xdc", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+// Elapsed time: 16 seconds
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // i:l (JPanel:JComponent, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "test_decoderfunc.sv", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "testD3to8_decoder.sv", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "D2to4_decoder.sv", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:H, cl:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:H, cl:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+/*
+#-------------------------------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# Current time: 10/31/17 8:13:09 AM EET
+# Process ID: 2968
+# Platform: Windows
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx
+# Technical Support with this file and a testcase attached.
+#-------------------------------------------------------------------------------
+ui.frmwork.CommandFailedException: ERROR: [Simtcl 6-165] Wave configuration has been modified. Use -force to close simulation without saving wave configuration.
+ (See D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/vivado_pid2968.debug)
+*/
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// Tcl Message: close_sim 
+// Tcl Message: ERROR: [Simtcl 6-165] Wave configuration has been modified. Use -force to close simulation without saving wave configuration. 
+// HOptionPane Error: "ERROR: [Simtcl 6-165] Wave configuration has been modified. Use -force to close simulation<br>without saving wave configuration.  (Vivado v2015.2 (64-bit))"
+selectButton("RDIResource.HOptionPane_APPLICATION_EXCEPTION_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+selectButton(PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION, "run_implementation"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// ap:bI (cl:JFrame): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, ap:bI)
+// cp:P (cl:JFrame):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // ap:bI (cl:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// cp:P (cl:JFrame):  Starting Design Runs : addNotify
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 
+// Tcl Message: [Tue Oct 31 08:13:23 2017] Launched synth_1... Run output will be captured here: D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.runs/synth_1/runme.log [Tue Oct 31 08:13:23 2017] Launched impl_1... Run output will be captured here: D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // cp:P (cl:JFrame)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "testD3to8_decoder.sv", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "D2to4_decoder.sv", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+// TclEventType: RUN_COMPLETED
+// Q:ap (cl:JFrame): Implementation Completed: addNotify
+// Elapsed time: 33 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a:JRadioButton (JPanel:JComponent, Q:ap)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, Q:ap)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+dismissDialog("Implementation Completed"); // Q:ap (cl:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// Tcl Message: [Tue Oct 31 08:14:23 2017] Launched impl_1... Run output will be captured here: D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// Q:ap (cl:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 24 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a:JRadioButton (JPanel:JComponent, Q:ap)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, Q:ap)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+selectButton("PAResourceOtoP.OpenHardwareManager_HARDWARE_MANAGER_ALREADY_OPEN_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// [GUI Memory]: 139 MB (+698kb) [00:27:33]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 28, false); // w:Y (v:H, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aC:ag (cl:JFrame): Program Device: addNotify
+selectButton("PAResourceOtoP.OpenHardwareManager_HARDWARE_MANAGER_ALREADY_OPEN_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aC:ag)
+// cp:P (cl:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aC:ag (cl:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS.000/Desktop/decoder/decoder.runs/impl_1/D2to4_decoder.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // cp:P (cl:JFrame)
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3.xdc", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+// Elapsed time: 28 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:H, cl:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:H, cl:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Simulation Settings]", 10, false); // w:Y (v:H, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_SETTINGS
+// Project Settings: addNotify
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+dismissDialog("Project Settings"); // k:br (cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "testD3to8_decoder.sv", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:H, cl:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// d:cp (cl:JFrame):  Run Simulation : addNotify
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: ERROR: [Simtcl 6-165] Wave configuration has been modified. Use -force to close simulation without saving wave configuration. 
+// HOptionPane Error: "ERROR: [Simtcl 6-165] Wave configuration has been modified. Use -force to close simulation<br>without saving wave configuration.<br> (Run Simulation)"
+// a:a (cl:JFrame): Critical Messages: addNotify
+// 'c' command handler elapsed time: 9 seconds
+selectButton("RDIResource.ProgressDialog_ERROR_ENCOUNTERED_PLEASE_SEE_TCL_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, a:a)
+dismissDialog("Critical Messages"); // a:a (cl:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Simulation Settings]", 10, false); // w:Y (v:H, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_SETTINGS
+// TclEventType: FILE_SET_CHANGE
+// Project Settings: addNotify
+dismissDialog("Project Settings"); // k:br (cl:JFrame)
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, null, -1, null, -1, false, false, false, false, true, false); // k:av (JViewport:JComponent, cl:JFrame) - Popup Trigger
+// Elapsed time: 18 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "D2to4_decoder.sv", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+// Elapsed time: 14 seconds
+closeMainWindow("decoder_structural - [D:/Users/TEMP.PCLABS.000/Desktop/decoder_structural/decoder_structural.xpr] - Vivado 2015.2"); // cl:JFrame
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// ap:bI (cl:JFrame): Close Project: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ap:bI)
+/*
+#-------------------------------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# Current time: 10/31/17 8:17:24 AM EET
+# Process ID: 2968
+# Platform: Windows
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx
+# Technical Support with this file and a testcase attached.
+#-------------------------------------------------------------------------------
+ui.frmwork.CommandFailedException: ERROR: [Simulator 45-6] No active opened simulation.
+ (See D:/Users/TEMP.PCLABS.000/Desktop/structural_multiplexer/vivado_pid2968.debug)
+*/
+// Tcl Message: close_sim 
+// Tcl Message: ERROR: [Simulator 45-6] No active opened simulation. 
+// HOptionPane Error: "ERROR: [Simulator 45-6] No active opened simulation.  (Vivado v2015.2 (64-bit))"
+dismissDialog("Close Project"); // ap:bI (cl:JFrame)
+selectButton("RDIResource.HOptionPane_APPLICATION_EXCEPTION_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// Elapsed time: 44 seconds
+closeMainWindow("decoder - [D:/Users/TEMP.PCLABS.000/Desktop/decoder/decoder.xpr] - Vivado 2015.2"); // cl:JFrame
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+closeMainWindow("decoder - [D:/Users/TEMP.PCLABS.000/Desktop/decoder/decoder.xpr] - Vivado 2015.2"); // cl:JFrame
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// aR:ah (cl:JFrame): Save Project: addNotify
+// aR:ah (cl:JFrame): Save Project: addNotify
+// Elapsed time: 10 seconds
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a:JButton (JPanel:JComponent, aR:ah)
+dismissDialog("Save Project"); // aR:ah (cl:JFrame)
+selectButton(PAResourceQtoS.SaveProjectUtils_DONT_SAVE, "Don't Save"); // a:JButton (JPanel:JComponent, aR:ah)
+dismissDialog("Save Project"); // aR:ah (cl:JFrame)
+closeMainWindow("decoder - [D:/Users/TEMP.PCLABS.000/Desktop/decoder/decoder.xpr] - Vivado 2015.2"); // cl:JFrame
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// aR:ah (cl:JFrame): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_DONT_SAVE, "Don't Save"); // a:JButton (JPanel:JComponent, aR:ah)
+// ap:bI (cl:JFrame): Close Project: addNotify
+dismissDialog("Save Project"); // aR:ah (cl:JFrame)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ap:bI)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// 'b' command handler elapsed time: 7 seconds
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Close Project"); // ap:bI (cl:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 689 MB. GUI used memory: 89 MB. Current time: 10/31/17 8:18:43 AM EET
+// cp:P (cl:JFrame):  Close Program and Debug : addNotify
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+dismissDialog("Close Program and Debug"); // cp:P (cl:JFrame)
+// Elapsed time: 14 seconds
+closeMainWindow("decoder - [D:/Users/TEMP.PCLABS.000/Desktop/decoder/decoder.xpr] - Vivado 2015.2"); // cl:JFrame
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// aR:ah (cl:JFrame): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_DONT_SAVE, "Don't Save"); // a:JButton (JPanel:JComponent, aR:ah)
+// ap:bI (cl:JFrame): Close Project: addNotify
+dismissDialog("Save Project"); // aR:ah (cl:JFrame)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ap:bI)
+// cp:P (cl:JFrame):  Close Project : addNotify
+dismissDialog("Close Project"); // ap:bI (cl:JFrame)
+// Tcl Message: current_project decoder 
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 689 MB. GUI used memory: 84 MB. Current time: 10/31/17 8:19:07 AM EET
+// 'b' command handler elapsed time: 6 seconds
+// Tcl Message: close_project 
+dismissDialog("Close Project"); // cp:P (cl:JFrame)
+// Elapsed time: 18 seconds
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, null, -1, null, -1, false, false, false, false, true, false); // d:av (JViewport:JComponent, cl:JFrame) - Popup Trigger
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, null, -1, null, -1, false, false, false, false, true, false); // d:av (JViewport:JComponent, cl:JFrame) - Popup Trigger
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, "dut ; D3to8_decoder ; Verilog Module", 1, "dut", 0, true, false, false, false, true, false); // d:av (JViewport:JComponent, cl:JFrame) - Popup Trigger - Node
+expandTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, "dut ; D3to8_decoder ; Verilog Module", 1); // d:av (JViewport:JComponent, cl:JFrame)
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, "testD3to8_decoder ; testD3to8_decoder ; Verilog Module", 0, "Verilog Module", 2, true); // d:av (JViewport:JComponent, cl:JFrame) - Node
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, "dut ; D3to8_decoder ; Verilog Module", 1, "Verilog Module", 2, true); // d:av (JViewport:JComponent, cl:JFrame) - Node
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, "testD3to8_decoder ; testD3to8_decoder ; Verilog Module", 0, "Verilog Module", 2, true); // d:av (JViewport:JComponent, cl:JFrame) - Node
+selectTreeTableHeader(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, "Design Unit", 1); // d:av (JViewport:JComponent, cl:JFrame)
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, "glbl ; glbl ; Verilog Module", 4, "glbl", 0, false); // d:av (JViewport:JComponent, cl:JFrame)
+// Elapsed time: 11 seconds
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, null, -1, null, -1, false, false, false, false, true, false); // d:av (JViewport:JComponent, cl:JFrame) - Popup Trigger

@@ -1,0 +1,378 @@
+/*
+
+Xilinx Vivado v2017.3 (64-bit) [Major: 2017, Minor: 3]
+SW Build: 2018833 on Wed Oct  4 19:58:22 MDT 2017
+IP Build: 2016188 on Wed Oct  4 21:52:56 MDT 2017
+
+Process ID: 3600
+License: Customer
+
+Current time: 	Mon Nov 13 10:42:40 AST 2017
+Time zone: 	Arabia Standard Time (Asia/Baghdad)
+
+OS: Windows 7
+OS Version: 6.1
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1280x1024
+Screen resolution (DPI): 120
+Available screens: 1
+Available disk space: 51 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2017.3/tps/win64/jre
+JVM executable location: 	C:/Xilinx/Vivado/2017.3/tps/win64/jre/bin/java.exe
+
+User name: 	hamze
+User home directory: C:/Users/hamze
+User working directory: C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/stepmotor
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2017.3
+RDI_DATADIR: C:/Xilinx/Vivado/2017.3/data
+RDI_BINDIR: C:/Xilinx/Vivado/2017.3/bin
+
+User preferences location: C:/Users/hamze/AppData/Roaming/Xilinx/Vivado
+Vivado preferences directory: C:/Users/hamze/AppData/Roaming/Xilinx/Vivado/2017.3/vivado.xml
+Vivado layouts directory: C:/Users/hamze/AppData/Roaming/Xilinx/Vivado/2017.3/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2017.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/stepmotor/vivado.log
+Vivado journal file location: 	C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/stepmotor/vivado.jou
+Engine tmp dir: 	C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/stepmotor/.Xil/Vivado-3600-win7VM
+
+GUI allocated memory:	167 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 512 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 35 MB (+34723kb) [00:00:11]
+// [Engine Memory]: 511 MB (+384588kb) [00:00:11]
+// aL (cl): Older Project Version: addNotify
+// [GUI Memory]: 48 MB (+11559kb) [00:00:15]
+// HMemoryUtils.trashcanNow. Engine heap size: 512 MB. GUI used memory: 33 MB. Current time: 11/13/17 10:42:43 AM AST
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aL)
+// Opening Vivado Project: C:\Users\hamze\Dropbox\Academic\Courses\Bilkent_TA_Digital_Design_CS223\Tutorial_Projects_Vivado_Basys3\stepmotor\stepmotor.xpr. Version: Vivado v2016.3 
+// bs (cl):  Open Project : addNotify
+dismissDialog("Older Project Version"); // aL (cl)
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/stepmotor/stepmotor.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/stepmotor' 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/stepmotor/stepmotor.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/stepmotor' INFO: [Project 1-313] Project file moved from 'D:/Users/hamze/Desktop/stepmotor' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [Project 1-230] Project 'stepmotor.xpr' upgraded for this version of Vivado. INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 577 MB (+42085kb) [00:01:07]
+// [GUI Memory]: 58 MB (+7848kb) [00:01:08]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.3/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 37 MB. Current time: 11/13/17 10:43:38 AM AST
+// Tcl Message: open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 811.180 ; gain = 53.906 
+// Project name: stepmotor; location: C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/stepmotor; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bs (cl)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 18 seconds
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aF (Q, cl)
+// Tcl Command: 'rdi::info_commands {re*}'
+// Tcl Command: 'rdi::info_commands {reset*}'
+// Tcl Command: 'rdi::info_commands {reset*}'
+// Tcl Command: 'rdi::info_commands {reset_*}'
+// Tcl Command: 'rdi::info_commands {reset_pro*}'
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "reset_pro", true); // aG (af, cl)
+applyEnter(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "reset_project"); // aG (af, cl)
+// Tcl Command: 'reset_project'
+// Tcl Command: 'reset_project'
+// Tcl Message: reset_project 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false, false, false, false, true, false); // u (O, cl) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SYNTH_SETTINGS, "Synthesis Settings..."); // ac (ai, cl)
+// Run Command: PAResourceCommand.PACommandNames_SYNTH_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// u (cl): Settings: addNotify
+// 'du' command handler elapsed time: 3 seconds
+// [GUI Memory]: 79 MB (+18780kb) [00:01:50]
+selectButton(RDIResource.BaseDialog_APPLY, "Apply"); // a (u)
+// [Engine Memory]: 614 MB (+8264kb) [00:01:56]
+// TclEventType: RUN_MODIFY
+// [GUI Memory]: 87 MB (+4058kb) [00:01:56]
+// Tcl Message: set_property STEPS.SYNTH_DESIGN.ARGS.FLATTEN_HIERARCHY none [get_runs synth_1] 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (u)
+dismissDialog("Settings"); // u (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 629 MB. GUI used memory: 57 MB. Current time: 11/13/17 10:44:27 AM AST
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x (cl): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cl):  Resetting Runs : addNotify
+// f (cl): Launch Runs: addNotify
+dismissDialog("No Implementation Results Available"); // x (cl)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'ct' command handler elapsed time: 3 seconds
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cl)
+// bs (cl):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Nov 13 10:44:40 2017] Launched synth_1... Run output will be captured here: C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/stepmotor/stepmotor.runs/synth_1/runme.log [Mon Nov 13 10:44:40 2017] Launched impl_1... Run output will be captured here: C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/stepmotor/stepmotor.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs (cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.sv)]", 1); // B (D, cl)
+// [Engine Memory]: 651 MB (+7320kb) [00:02:15]
+// HMemoryUtils.trashcanNow. Engine heap size: 651 MB. GUI used memory: 55 MB. Current time: 11/13/17 10:44:43 AM AST
+// PAPropertyPanels.initPanels (top.sv) elapsed time: 0.3s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.sv)]", 1, true); // B (D, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.sv)]", 1, true, false, false, false, false, true); // B (D, cl) - Double Click - Node
+// Launch External Editor: 'notepad++.exe "C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/stepmotor/stepmotor.srcs/sources_1/new/top.sv" -n22'
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking too long to process. Increasing delay to 3000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking too long to process. Increasing delay to 3000 ms.
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking too long to process. Increasing delay to 4000 ms.
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: RUN_COMPLETED
+// TclEventType: DG_GRAPH_GENERATED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking too long to process. Increasing delay to 4000 ms.
+// ah (cl): Bitstream Generation Completed: addNotify
+// [GUI Memory]: 91 MB (+52kb) [00:05:51]
+// [GUI Memory]: 96 MB (+99kb) [00:06:15]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 378 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x (cl): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cl):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // x (cl)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cl): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'ct' command handler elapsed time: 11 seconds
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cl)
+// TclEventType: RUN_MODIFY
+// bs (cl):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Mon Nov 13 10:51:21 2017] Launched synth_1... Run output will be captured here: C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/stepmotor/stepmotor.runs/synth_1/runme.log [Mon Nov 13 10:51:21 2017] Launched impl_1... Run output will be captured here: C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/stepmotor/stepmotor.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs (cl)
+// Elapsed time: 13 seconds
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (N, cl)
+// bs (cl):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.StateMonitor_OK_TO_CANCEL_YOUR_RUNNING_SYNTHESIS_Cancel Process", "Cancel Process"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bs (cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2); // B (D, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, top.xdc]", 4, false); // B (D, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, top.xdc]", 4, false, false, false, false, false, true); // B (D, cl) - Double Click
+// Launch External Editor: 'notepad++.exe "C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/stepmotor/stepmotor.srcs/constrs_1/new/top.xdc" -n0'
+// Elapsed time: 75 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x (cl): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cl):  Resetting Runs : addNotify
+// f (cl): Launch Runs: addNotify
+dismissDialog("No Implementation Results Available"); // x (cl)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (f)
+// 'ct' command handler elapsed time: 4 seconds
+dismissDialog("Launch Runs"); // f (cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// f (cl): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bs (cl):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cl)
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Mon Nov 13 10:53:06 2017] Launched synth_1... Run output will be captured here: C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/stepmotor/stepmotor.runs/synth_1/runme.log 
+// [GUI Memory]: 106 MB (+4930kb) [00:10:40]
+dismissDialog("Starting Design Runs"); // bs (cl)
+// TclEventType: RUN_COMPLETED
+// ah (cl): Synthesis Completed: addNotify
+// Elapsed time: 129 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Synthesis Completed"); // ah (cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 13, true, false, false, false, true, false); // u (O, cl) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_SYNTH_SETTINGS, "Synthesis Settings..."); // ac (ai, cl)
+// Run Command: PAResourceCommand.PACommandNames_SYNTH_SETTINGS
+// u (cl): Settings: addNotify
+dismissDialog("Settings"); // u (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Z (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cl)
+// [GUI Memory]: 119 MB (+8346kb) [00:13:16]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15, true); // u (O, cl) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+// bs (cl):  Open Synthesized Design : addNotify
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7a35tcpg236-1 
+// HMemoryUtils.trashcanNow. Engine heap size: 702 MB. GUI used memory: 60 MB. Current time: 11/13/17 10:55:48 AM AST
+// [Engine Memory]: 702 MB (+18967kb) [00:13:21]
+// [Engine Memory]: 822 MB (+88715kb) [00:13:26]
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 917 MB. GUI used memory: 60 MB. Current time: 11/13/17 10:55:57 AM AST
+// [Engine Memory]: 919 MB (+58291kb) [00:13:30]
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 967 MB (+2496kb) [00:13:31]
+// Xgd.load filename: C:/Xilinx/Vivado/2017.3/data/parts/xilinx/artix7/devint/artix7/xc7a35t/xc7a35t.xgd; ZipEntry: xc7a35t_floorplan.xgd elapsed time: 0.5s
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 1.3s
+// Xgd.load filename: C:/Xilinx/Vivado/2017.3/data/parts/xilinx/artix7/devint/artix7/xc7a35t/xc7a35t.xgd; ZipEntry: xc7a35t_detail.xgd elapsed time: 1.1s
+// Package: addNotify
+// Device: addNotify
+// DeviceView Instantiated
+// PAPropertyPanels.initPanels (top.xdc) elapsed time: 0.3s
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2017.3 INFO: [Device 21-403] Loading part xc7a35tcpg236-1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/stepmotor/stepmotor.srcs/constrs_1/new/top.xdc] Finished Parsing XDC File [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/stepmotor/stepmotor.srcs/constrs_1/new/top.xdc] 
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: open_run: Time (s): cpu = 00:00:28 ; elapsed = 00:00:20 . Memory (MB): peak = 1136.207 ; gain = 324.859 
+// 'dM' command handler elapsed time: 23 seconds
+// Elapsed time: 23 seconds
+dismissDialog("Open Synthesized Design"); // bs (cl)
+// [Engine Memory]: 1,018 MB (+2489kb) [00:13:43]
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aF (Q, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,024 MB. GUI used memory: 89 MB. Current time: 11/13/17 10:56:13 AM AST
+// Tcl Command: 'rdi::info_commands {write*}'
+// Tcl Command: 'rdi::info_commands {write_*}'
+// Tcl Command: 'rdi::info_commands {write_v*}'
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "write_v", true); // aG (af, cl)
+// Tcl Command: 'rdi::match_options {write_verilog} {}'
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "write_verilog  -", true); // aG (af, cl)
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// [Engine Memory]: 1,077 MB (+9164kb) [00:13:59]
+// Tcl Command: 'rdi::info_commands bd::match_path'
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "write_verilog  -keep_vcc_gnd  C:\Users\hamze\Dropbox\Academic\Courses\Bilkent_TA_Digital_Design_CS223\Tutorial_Projects_Vivado_Basys3\x.sv", true); // aG (af, cl)
+// Tcl Command: 'write_verilog  -keep_vcc_gnd  C:\Users\hamze\Dropbox\Academic\Courses\Bilkent_TA_Digital_Design_CS223\Tutorial_Projects_Vivado_Basys3\x.sv'
+// Tcl Command: 'write_verilog  -keep_vcc_gnd  C:\Users\hamze\Dropbox\Academic\Courses\Bilkent_TA_Digital_Design_CS223\Tutorial_Projects_Vivado_Basys3\x.sv'
+// Tcl Message: write_verilog  -keep_vcc_gnd  C:\Users\hamze\Dropbox\Academic\Courses\Bilkent_TA_Digital_Design_CS223\Tutorial_Projects_Vivado_Basys3\x.sv 
+// Tcl Message: C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/stepmotor/UsershamzeDropboxAcademicCoursesBilkent_TA_Digital_Design_CS223Tutorial_Projects_Vivado_Basys3x.sv 
+// [Engine Memory]: 1,172 MB (+42520kb) [00:14:00]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,214 MB. GUI used memory: 89 MB. Current time: 11/13/17 10:56:28 AM AST
+// [Engine Memory]: 1,243 MB (+13152kb) [00:14:01]
+// [Engine Memory]: 1,403 MB (+103007kb) [00:14:02]
+// RouteApi::initDelayMediator elapsed time: 24.8s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aB, cl)
+closeTask("Synthesis", "Synthesized Design", "DesignTask.NETLIST_PLANNING");
+// x (cl): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (x)
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 84 MB. Current time: 11/13/17 10:56:41 AM AST
+// Engine heap size: 1,403 MB. GUI used memory: 85 MB. Current time: 11/13/17 10:56:41 AM AST
+// TclEventType: CURR_DESIGN_SET
+// TclEventType: DESIGN_CLOSE
+// Tcl Message: close_design 
+dismissDialog("Confirm Close"); // x (cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x (cl): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cl):  Resetting Runs : addNotify
+// f (cl): Launch Runs: addNotify
+dismissDialog("No Implementation Results Available"); // x (cl)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'ct' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f (cl)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bs (cl):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Mon Nov 13 10:56:53 2017] Launched impl_1... Run output will be captured here: C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/stepmotor/stepmotor.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs (cl)

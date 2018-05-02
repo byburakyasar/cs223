@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Mon Nov 13 10:16:44 2017
+# Process ID: 4208
+# Current directory: C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/keyboard_matrix_netlist_modules
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4976 C:\Users\hamze\Dropbox\Academic\Courses\Bilkent_TA_Digital_Design_CS223\Tutorial_Projects_Vivado_Basys3\keyboard_matrix_netlist_modules\keyboard_matrix.xpr
+# Log file: C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/keyboard_matrix_netlist_modules/vivado.log
+# Journal file: C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/keyboard_matrix_netlist_modules\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/keyboard_matrix_netlist_modules/keyboard_matrix.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1

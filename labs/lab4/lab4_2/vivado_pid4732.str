@@ -1,0 +1,201 @@
+/*
+
+Vivado v2015.2 (64-bit)
+SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+Process ID: 4732
+
+Current time: 	11/13/17 8:08:08 PM EET
+Time zone: 	Eastern European Time (Europe/Athens)
+
+OS: Windows 7
+Version: 6.1
+Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_25 64-bit
+Java home: 	C:/Xilinx/Vivado/2015.2/tps/win64/jre
+
+User name: 	burak.yasar-ug
+User directory: D:/Users/TEMP.PCLABS.001/Desktop/lab4_2
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+Vivado preferences path: D:/Users/TEMP.PCLABS.001/AppData/Roaming/Xilinx/Vivado/2015.2/vivado.ini
+Vivado layouts directory: D:/Users/TEMP.PCLABS.001/AppData/Roaming/Xilinx/Vivado/2015.2/layouts/application
+
+GUI allocated memory:	200 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 468 MB
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: D:\Users\TEMP.PCLABS.001\Desktop\lab4_2\lab4_2.xpr. Version: Vivado v2015.2 
+// cp:P (cl:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 48 MB (+48038kb) [00:00:08]
+// [Engine Memory]: 398 MB (+266250kb) [00:00:08]
+// [GUI Memory]: 70 MB (+20567kb) [00:00:08]
+// [Engine Memory]: 422 MB (+3536kb) [00:00:08]
+// [Engine Memory]: 449 MB (+6418kb) [00:00:09]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: open_project D:/Users/TEMP.PCLABS.001/Desktop/lab4_2/lab4_2.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: lab4_2; location: D:/Users/TEMP.PCLABS.001/Desktop/lab4_2; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // cp:P (cl:JFrame)
+// [Engine Memory]: 473 MB (+2090kb) [00:00:11]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// HMemoryUtils.trashcanNow. Engine heap size: 475 MB. GUI used memory: 34 MB. Current time: 11/13/17 8:08:10 PM EET
+// Elapsed time: 24 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ThreeBitGrayCounterClk (ThreeBitGrayCounter.sv)]", 1, true); // A:k (H:JPanel, cl:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ThreeBitGrayCounterClk (ThreeBitGrayCounter.sv)]", 1, true, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 4); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3.xdc]", 6, false); // A:k (H:JPanel, cl:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 7); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3.xdc]", 6, false); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3.xdc]", 6, false, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click
+selectCodeEditor("Basys3.xdc", 322, 148); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 29 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // w:Y (v:H, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// ap:bI (cl:JFrame): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, ap:bI)
+// cp:P (cl:JFrame):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // ap:bI (cl:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // cp:P (cl:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// Tcl Message: [Mon Nov 13 20:09:21 2017] Launched synth_1... Run output will be captured here: D:/Users/TEMP.PCLABS.001/Desktop/lab4_2/lab4_2.runs/synth_1/runme.log [Mon Nov 13 20:09:21 2017] Launched impl_1... Run output will be captured here: D:/Users/TEMP.PCLABS.001/Desktop/lab4_2/lab4_2.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// [GUI Memory]: 76 MB (+2444kb) [00:01:54]
+// TclEventType: RUN_COMPLETED
+// Q:ap (cl:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 83 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a:JRadioButton (JPanel:JComponent, Q:ap)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, Q:ap)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+dismissDialog("Bitstream Generation Completed"); // Q:ap (cl:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // i:l (JPanel:JComponent, cl:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0] 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183713146A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS.001/Desktop/lab4_2/lab4_2.runs/impl_1/ThreeBitGrayCounterClk.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: current_hw_device [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// [Engine Memory]: 523 MB (+27489kb) [00:02:52]
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // i:l (JPanel:JComponent, cl:JFrame)
+selectMenuItem((HResource) null, "xc7a35t_0"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aC:ag (cl:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aC:ag)
+// cp:P (cl:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aC:ag (cl:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS.001/Desktop/lab4_2/lab4_2.runs/impl_1/ThreeBitGrayCounterClk.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // cp:P (cl:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 528 MB. GUI used memory: 40 MB. Current time: 11/13/17 8:10:55 PM EET
+// Tcl Message: ERROR: [Labtools 27-3175] Target jsn-Basys3-210183713146A is no longer available. Please use disconnect_hw_server to close the current server connection. Check cable connectivity and that the target board is powered up. Restart the hw_server application running on host localhost, port 3121 and then use connect_hw_server to re-establish connection to target. 
+// Tcl Message: close_hw_target 
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: INFO: [Labtoolstcl 44-464] Closing hw_target localhost/xilinx_tcf/Digilent/210183713146A 
+// Elapsed time: 673 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // i:l (JPanel:JComponent, cl:JFrame)
+selectMenu(PAResourceOtoP.ProgramDebugTab_OPEN_RECENTLY_OPENED_TARGET, "Recent Targets"); // X:JMenu (ai:JPopupMenu, cl:JFrame)
+selectMenu(PAResourceOtoP.ProgramDebugTab_CLOSED_TARGETS, "Closed Targets"); // X:JMenu (ai:JPopupMenu, cl:JFrame)
+selectMenu(PAResourceOtoP.ProgramDebugTab_CLOSED_TARGETS, "Closed Targets"); // X:JMenu (ai:JPopupMenu, cl:JFrame)
+selectMenuItem((HResource) null, "localhost/xilinx_tcf/Digilent/210183713146A"); // ab:JMenuItem (JPopupMenu:JComponent, cl:JFrame)
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // i:l (JPanel:JComponent, cl:JFrame)
+selectMenuItem((HResource) null, "xc7a35t_0"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aC:ag (cl:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aC:ag)
+// cp:P (cl:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aC:ag (cl:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/Users/TEMP.PCLABS.001/Desktop/lab4_2/lab4_2.runs/impl_1/ThreeBitGrayCounterClk.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // cp:P (cl:JFrame)
+// Tcl Message: ERROR: [Labtools 27-3175] Target jsn-Basys3-210183713146A is no longer available. Please use disconnect_hw_server to close the current server connection. Check cable connectivity and that the target board is powered up. Restart the hw_server application running on host localhost, port 3121 and then use connect_hw_server to re-establish connection to target. 
+// Tcl Message: close_hw_target 
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: INFO: [Labtoolstcl 44-464] Closing hw_target localhost/xilinx_tcf/Digilent/210183713146A 
+// Tcl Message: ERROR: [Labtools 27-3175] Target jsn-Basys3-210183713146A is no longer available. Please use disconnect_hw_server to close the current server connection. Check cable connectivity and that the target board is powered up. Restart the hw_server application running on host localhost, port 3121 and then use connect_hw_server to re-establish connection to target. 
+// Tcl Message: close_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-464] Closing hw_target localhost/xilinx_tcf/Digilent/210183713146A INFO: [Labtoolstcl 44-468] Target hw_target localhost/xilinx_tcf/Digilent/210183713146A is already closed 

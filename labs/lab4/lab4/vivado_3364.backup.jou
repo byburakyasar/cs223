@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Mon Nov 13 18:00:18 2017
+# Process ID: 3608
+# Log file: D:/Users/TEMP.PCLABS.001/Desktop/lab4/vivado.log
+# Journal file: D:/Users/TEMP.PCLABS.001/Desktop/lab4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Users/TEMP.PCLABS.001/Desktop/lab4/lab4.xpr
+remove_files -fileset constrs_1 D:/Users/TEMP.PCLABS.001/Desktop/Desktop/Basys3.xdc
+add_files -fileset constrs_1 -norecurse D:/Users/TEMP.PCLABS.001/Desktop/lab4/Basys3.xdc
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top TwoBitUpCounter [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/Users/TEMP.PCLABS.001/Desktop/lab4/lab4.srcs/sim_1/new/Test2BitCounterClk.sv w ]
+add_files -fileset sim_1 D:/Users/TEMP.PCLABS.001/Desktop/lab4/lab4.srcs/sim_1/new/Test2BitCounterClk.sv
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation

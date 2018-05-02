@@ -1,0 +1,122 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Mon Nov 13 12:14:10 2017
+# Process ID: 4224
+# Current directory: C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/keypad_netlist_modules
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5552 C:\Users\hamze\Dropbox\Academic\Courses\Bilkent_TA_Digital_Design_CS223\Tutorial_Projects_Vivado_Basys3\keypad_netlist_modules\keyboard_matrix.xpr
+# Log file: C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/keypad_netlist_modules/vivado.log
+# Journal file: C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/keypad_netlist_modules\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/keypad_netlist_modules/keyboard_matrix.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/keypad_netlist_modules'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.3/data/ip'.
+open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:39 . Memory (MB): peak = 778.773 ; gain = 88.676
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/keypad_netlist_modules/keyboard_matrix.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/keypad_netlist_modules/keyboard_matrix.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L xil_defaultlib -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/keypad_netlist_modules/keyboard_matrix.srcs/sources_1/new/SevSeg_4digit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SevSeg_4digit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/keypad_netlist_modules/keyboard_matrix.srcs/sources_1/new/keypad4X4.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keypad4X4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/keypad_netlist_modules/keyboard_matrix.srcs/sources_1/new/top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2458] undeclared symbol key_valid, assumed default net type wire [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/keypad_netlist_modules/keyboard_matrix.srcs/sources_1/new/top.sv:42]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/keypad_netlist_modules/keyboard_matrix.srcs/sim_1/new/testbench.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/keypad_netlist_modules/keyboard_matrix.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 778.773 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '8' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/keypad_netlist_modules/keyboard_matrix.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 5a6f6ed9458d447d9b19c7722e16089d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port O [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/keypad_netlist_modules/keyboard_matrix.srcs/sources_1/new/keypad4X4.sv:522]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port CO [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/keypad_netlist_modules/keyboard_matrix.srcs/sources_1/new/SevSeg_4digit.sv:313]
+WARNING: [VRFC 10-278] actual bit length 2 differs from formal bit length 4 for port O [C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/keypad_netlist_modules/keyboard_matrix.srcs/sources_1/new/SevSeg_4digit.sv:316]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.FDRE(INIT=1'b1)
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.VCC
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module unisims_ver.CARRY4
+Compiling module xil_defaultlib.keypad4X4
+Compiling module xil_defaultlib.SevSeg_4digit
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+
+****** Webtalk v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/keypad_netlist_modules/keyboard_matrix.sim/sim_1/behav/xsim/xsim.dir/testbench_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/keypad_netlist_modules/keyboard_matrix.sim/sim_1/behav/xsim/xsim.dir/testbench_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Nov 13 12:18:59 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.3/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 53.516 ; gain = 1.473
+INFO: [Common 17-206] Exiting Webtalk at Mon Nov 13 12:18:59 2017...
+run_program: Time (s): cpu = 00:00:03 ; elapsed = 00:00:32 . Memory (MB): peak = 778.773 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '32' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/hamze/Dropbox/Academic/Courses/Bilkent_TA_Digital_Design_CS223/Tutorial_Projects_Vivado_Basys3/keypad_netlist_modules/keyboard_matrix.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+add_wave: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 778.773 ; gain = 0.000
+# run 1000ns
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 778.773 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:13 ; elapsed = 00:00:59 . Memory (MB): peak = 778.773 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 779.492 ; gain = 0.719
+reset_simulation
+INFO: [Vivado 12-2266] Removing simulation data...
+INFO: [Vivado 12-2267] Reset complete
+reset_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 13 12:20:48 2017...
